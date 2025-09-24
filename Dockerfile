@@ -26,7 +26,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY . .
 
 # Copy engineered dataset
-COPY storage/datasets/dataset_sampled.csv storage/datasets/dataset_sampled.csv
+COPY storage/datasets/dataset_sample.csv storage/datasets/dataset_sample.csv
 
 # Train a model during build using external script
 RUN python3 train_model_docker.py
