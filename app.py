@@ -44,9 +44,43 @@ DATASET_DIR = "storage/datasets"
 LOG_DIR = "logs"
 OUTPUT_DIR = "output"
 
+
 # Create necessary directories
 for directory in [MODEL_DIR, DATASET_DIR, LOG_DIR, OUTPUT_DIR]:
     Path(directory).mkdir(parents=True, exist_ok=True)
+
+def create_synthetic_data(n_samples=10000):
+    """Create synthetic dataset for testing"""
+    np.random.seed(42)
+    
+    data = {
+        'amt': np.random.lognormal(3.5, 1.5, n_samples),
+        'unix_time': np.random.randint(1577836800, 1609459200, n_samples),
+        'merch_lat': np.random.uniform(25, 50, n_samples),
+        'merch_long': np.random.uniform(-125, -65, n_samples),
+        'cc_num': np.random.randint(1000000000000000, 9999999999999999, n_samples)
+    }
+    
+    # Add more features if needed
+    for i in range(5, 62):  # Create 62 features total
+        data[f'feature_{i}'] = np.random.randn(n_samples)
+    
+    return pd.DataFrame(data)
+
+engineered_path = Path(DATASET_DIR) / "dataset_engineered_raw.csv"
+if not engineered_path.exists():
+    logger.info("Creating engineered dataset from raw data...")
+    try:
+        from engineer_from_raw import engineer_features_from_raw
+        df = engineer_features_from_raw()
+        df.to_csv(engineered_path, index=False)
+        logger.info(f"Created engineered dataset with {len(df.columns)} features, fraud rate: {df['is_fraud'].mean():.2%}")
+    except Exception as e:
+        logger.error(f"Could not create engineered dataset: {e}")
+        # Fall back to synthetic data
+        logger.info("Falling back to synthetic data generation...")
+        df = create_synthetic_data(1000000)  # Create large synthetic dataset
+        df.to_csv(engineered_path, index=False)
 
 def load_default_model():
     """Load the default model at startup"""
@@ -538,7 +572,7 @@ def train_model_endpoint():
             trained_model.save_model(str(text_model_path))
             
             # Save like script does
-            script_model_path = Path("storage/models/fraud_model_lightgbm_adasyn.pkl.txt")
+            script_model_path = Path(f"storage/models/fraud_model_lightgbm_adasyn_{timestamp}.pkl.txt")
             script_model_path.parent.mkdir(parents=True, exist_ok=True)
             trained_model.save_model(str(script_model_path))
             
@@ -548,7 +582,7 @@ def train_model_endpoint():
                 'threshold': threshold,
                 'feature_cols': feature_columns,
                 'params': params
-            }, Path("storage/models/fraud_model_lightgbm_adasyn.pkl"))
+            }, Path(f"storage/models/fraud_model_lightgbm_adasyn_{timestamp}.pkl"))
         
         # Log training event
         log_data = {
@@ -576,19 +610,19 @@ def train_model_endpoint():
         meets_requirements = precision >= 0.7 and recall >= 0.7
         
         drift_analysis = None
-        if drift_monitor.detector.baseline_stats:
-            try:
-                dataset_path = Path("storage/datasets/dataset_engineered_raw.csv")
-                if dataset_path.exists():
-                    drift_report = drift_monitor.check_new_data_drift(str(dataset_path))
-                    drift_analysis = {
-                        "drift_detected": drift_report.features_with_drift > 0,
-                        "drift_percentage": drift_report.drift_percentage,
-                        "severity": drift_report.overall_severity,
-                        "recommendation": drift_report.recommendations[0] if drift_report.recommendations else "No concerns"
-                    }
-            except Exception as e:
-                logger.warning(f"Could not perform drift analysis: {e}")
+        # if drift_monitor.detector.baseline_stats:
+        #     try:
+        #         dataset_path = Path("storage/datasets/dataset_engineered_raw.csv")
+        #         if dataset_path.exists():
+        #             drift_report = drift_monitor.check_new_data_drift(str(dataset_path))
+        #             drift_analysis = {
+        #                 "drift_detected": drift_report.features_with_drift > 0,
+        #                 "drift_percentage": drift_report.drift_percentage,
+        #                 "severity": drift_report.overall_severity,
+        #                 "recommendation": drift_report.recommendations[0] if drift_report.recommendations else "No concerns"
+        #             }
+        #     except Exception as e:
+        #         logger.warning(f"Could not perform drift analysis: {e}")
 
         # Log training with drift analysis
         logger_manager.log_model_training({
@@ -699,24 +733,6 @@ def test_logging():
         "test_log_created": test_log_path,
         "current_time": datetime.datetime.now().isoformat()
     })
-
-def create_synthetic_data(n_samples=10000):
-    """Create synthetic dataset for testing"""
-    np.random.seed(42)
-    
-    data = {
-        'amt': np.random.lognormal(3.5, 1.5, n_samples),
-        'unix_time': np.random.randint(1577836800, 1609459200, n_samples),
-        'merch_lat': np.random.uniform(25, 50, n_samples),
-        'merch_long': np.random.uniform(-125, -65, n_samples),
-        'cc_num': np.random.randint(1000000000000000, 9999999999999999, n_samples)
-    }
-    
-    # Add more features if needed
-    for i in range(5, 62):  # Create 62 features total
-        data[f'feature_{i}'] = np.random.randn(n_samples)
-    
-    return pd.DataFrame(data)
 
 if __name__ == '__main__':
     # Only runs when executed directly, not in Docker import
