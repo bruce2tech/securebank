@@ -1,0 +1,20 @@
+{
+  "event_type": "model_training",
+  "training_metrics": {
+    "model_id": "model_20250924_060400",
+    "timestamp": "20250924_060400",
+    "performance": {
+      "precision": 0.8595641646489104,
+      "recall": 0.8198614318706697,
+      "f1_score": 0.8392434988179669
+    },
+    "drift_analysis": {
+      "drift_detected": false,
+      "drift_percentage": 0.0,
+      "severity": "none",
+      "recommendation": "✅ No significant drift detected. Continue normal monitoring."
+    }
+  },
+  "endpoint": "/train_model",
+  "system_timestamp": "2025-09-24T06:04:31.497930"
+}

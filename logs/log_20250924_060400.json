@@ -1,0 +1,16 @@
+{
+  "timestamp": "20250924_060400",
+  "model_type": "lightgbm",
+  "configuration": "Aggressive",
+  "adasyn_sampling": null,
+  "threshold": 0.5,
+  "performance": {
+    "precision": 0.8595641646489104,
+    "recall": 0.8198614318706697,
+    "f1_score": 0.8392434988179669
+  },
+  "features_count": 58,
+  "training_samples": 1318033,
+  "test_samples": 329509,
+  "processing_time": 47.41582751274109
+}
