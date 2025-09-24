@@ -1,0 +1,11 @@
+{
+  "event_type": "prediction_request",
+  "request_data": {
+    "debug": "test"
+  },
+  "prediction": "test",
+  "fraud_probability": 0.5,
+  "processing_time_seconds": 0.001,
+  "endpoint": "/predict",
+  "system_timestamp": "2025-09-23T07:52:34.363093"
+}

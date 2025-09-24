@@ -1,0 +1,14 @@
+{
+  "event_type": "prediction_request",
+  "request_data": {
+    "amt": 999,
+    "unix_time": 1705318200,
+    "merch_lat": 40.7128,
+    "merch_long": -74.006
+  },
+  "prediction": "fraudulent",
+  "fraud_probability": 0.6717748544265333,
+  "processing_time_seconds": 0.010839700698852539,
+  "endpoint": "/predict",
+  "system_timestamp": "2025-09-23T07:55:02.876684"
+}
