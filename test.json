@@ -1,0 +1,10 @@
+{
+    "trans_date_trans_time": "2021-10-07 12:01:55",
+    "cc_num": "4059294504000000",
+    "unix_time": 1633608115,
+    "merchant": "Walmart",
+    "category": "grocery_pos",
+    "amt": 45.23,
+    "merch_lat": 40.7589,
+    "merch_long": -73.9851
+}
