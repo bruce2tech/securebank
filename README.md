@@ -8,6 +8,33 @@ A comprehensive fraud detection system built with Flask, scikit-learn, and Docke
 - Docker
 - Python 3.9+ (for local development)
 - bash (for running test scripts)
+- data sources: customer data , transaction data, fraud_truth data
+
+### Initial setup
+From project root:
+Clone repo and store data sources in securebank/data_sources
+
+creates engineered dataset in securebank/storage/datasets
+run: python engineer_from_raw.py
+
+create build docker image
+run: docker build -t securebank  .
+
+start container
+run: docker run -d -p 5000:5000 securebank_app
+
+
+### List models in the container
+docker exec securebank-app ls -la storage/models/
+
+### List datasets in the container
+docker exec securebank-app ls -la storage/datasets/
+
+### Copy datasets to local machine
+docker cp securebank-app:/app/storage/datasets/dataset_engineered_raw.csv ./storage/datasets
+
+### Copy models to local machine
+docker cp securebank-app:/app/storage/models/best_lgb_model.pkl ./storage/models
 
 ### Running the System
 
@@ -68,10 +95,27 @@ securebank/
     └── train_model.sh            # Test model training
 ```
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### POST `/predict`
 Predict fraud for a single transaction.
+
+**Commandline Test**
+```
+curl -s -X POST http://localhost:5000/predict \
+        -H 'Content-Type: application/json' \
+        -d '{
+    "trans_date_trans_time": "2021-10-07 12:01:55",
+    "cc_num": "4059294504000000",
+    "unix_time": 1633608115,
+    "merchant": "Walmart",
+    "category": "grocery_pos",
+    "amt": 45.23,
+    "merch_lat": 40.7589,
+    "merch_long": -73.9851
+}'
+
+```
 
 **Request Body:**
 ```json
@@ -89,38 +133,66 @@ Predict fraud for a single transaction.
 
 **Response:**
 ```json
-{
-    "predict": "legitimate",
-    "probability": 0.15
-}
+{"confidence":0.6266993938524225,"features_used":58,"fraud_probability":0.6266993938524225,"model_type":"lightgbm","predict":"fraudulent"}
 ```
 
 ### POST `/create_dataset`
 Generate high-quality training dataset from raw data sources.
 
-**Response:**
-```json
+**Commandline Test**
+```
+./executables/create_dataset.sh
+```
+**Response**
+```
+Testing /create_dataset endpoint...
+URL: http://127.0.0.1:5000/create_dataset
+----------------------------------------
+Response Body:
 {
+    "columns": 23,
+    "dataset_path": "storage/datasets/dataset_train_20250925_011305.csv",
+    "fraud_ratio": 0.010027058490769887,
+    "rows": 1647542,
     "status": "success",
-    "dataset_path": "storage/datasets/dataset_train_20231201_143022.csv",
-    "records": 50000,
-    "fraud_rate": 0.05
+    "timestamp": "20250925_011305"
 }
 ```
 
 ### POST `/train_model`
 Train a new fraud detection model on the latest dataset.
 
+**Commandline Test**
+```
+./executables/train_model.sh
+```
+
 **Response:**
 ```json
+Testing /train_model endpoint...
+URL: http://127.0.0.1:5000/train_model
+Timeout: 300s
+Note: Training takes 1-2 minutes
+----------------------------------------
+Response Body:
 {
-    "status": "success",
-    "model_id": "fraud_model_20231201_143500_p0.752_r0.689",
+    "adasyn_used": true,
+    "configuration": "LightGBM-Aggressive",
+    "features_used": 58,
+    "meets_requirements": true,
+    "message": "Model MEETS 70/70 requirements",
+    "model_path": "output/fraud_model_20250925_011438.pkl",
+    "model_type": "lightgbm",
     "performance": {
-        "precision": 0.752,
-        "recall": 0.689,
-        "f1_score": 0.719
-    }
+        "f1_score": 0.8019,
+        "precision": 0.7634,
+        "recall": 0.8445
+    },
+    "processing_time_seconds": 61.46,
+    "status": "success",
+    "test_samples": 329509,
+    "threshold": 0.5,
+    "training_samples": 1353333
 }
 ```
 
@@ -136,25 +208,9 @@ Health check endpoint for monitoring.
 }
 ```
 
-## 📊 Model Requirements
 
-- **Performance**: ≥70% precision and ≥70% recall on production datasets
-- **Features**: Uses both transaction and customer data
-- **Training Time**: Completes in under 15 minutes without GPU
-- **Architecture**: Logistic regression with preprocessing pipeline
 
-## 📝 Logging and Monitoring
-
-All requests and operations are logged as JSON files in the `logs/` directory with timestamps:
-
-- **Prediction requests**: Request data, predictions, response times
-- **Training activities**: Model performance, training metrics
-- **Dataset generation**: Dataset statistics, processing time
-- **System errors**: Error details and context
-
-Example log file: `logs/log_20231201_143022_123.json`
-
-## 🧪 Testing
+## Testing
 
 The system includes comprehensive bash scripts for testing all functionality:
 
@@ -172,38 +228,4 @@ The system includes comprehensive bash scripts for testing all functionality:
 ./executables/train_model.sh [host] [port]
 ```
 
-## 🐛 Development Status
-
-**Phase 1: ✅ Complete** - Project structure and basic Flask app
-- ✅ Organized project structure
-- ✅ Basic Flask application with `/predict` endpoint
-- ✅ Logging and model management utilities
-- ✅ Docker configuration
-- ✅ Test scripts
-
-**Phase 2: 🚧 In Progress** - Enhanced Flask endpoints
-**Phase 3: 📋 Planned** - Complete logging system
-**Phase 4: 📋 Planned** - Dataset generation service  
-**Phase 5: 📋 Planned** - Model training service
-**Phase 6: 📋 Planned** - Final integration and testing
-
-## 🔧 Local Development
-
-For local development without Docker:
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python app.py
-
-# Test endpoints
-curl -X POST http://localhost:5000/predict \
-     -H "Content-Type: application/json" \
-     -d @test.json
-```
-
-## 📄 License
-
-This project is part of the SecureBank fraud detection system assignment.
+This project is part of the SecureBank fraud detection system.
