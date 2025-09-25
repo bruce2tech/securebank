@@ -539,7 +539,7 @@ def train_model_endpoint():
         
         # Save model with all metadata
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        model_path = Path(OUTPUT_DIR) / f"fraud_model_{timestamp}.pkl"
+        model_path = Path(MODEL_DIR) / f"fraud_model_{timestamp}.pkl"
         
         model_data = {
             'model': trained_model,
@@ -562,13 +562,13 @@ def train_model_endpoint():
             pickle.dump(model_data, f, protocol=2)
         
         # Also save as best model
-        best_model_path = Path(OUTPUT_DIR) / "best_lgb_model.pkl"
+        best_model_path = Path(MODEL_DIR) / "best_lgb_model.pkl"
         with open(best_model_path, 'wb') as f:
             pickle.dump(model_data, f, protocol=2)
         
         # Save the actual LightGBM model in text format if applicable
         if model_type_used == "lightgbm":
-            text_model_path = Path(OUTPUT_DIR) / "lightgbm_model.txt"
+            text_model_path = Path(MODEL_DIR) / "lightgbm_model.txt"
             trained_model.save_model(str(text_model_path))
             
             # Save like script does
@@ -610,6 +610,8 @@ def train_model_endpoint():
         meets_requirements = precision >= 0.7 and recall >= 0.7
         
         drift_analysis = None
+
+        # Uncomment to conduct drift monitoring on new data.
         # if drift_monitor.detector.baseline_stats:
         #     try:
         #         dataset_path = Path("storage/datasets/dataset_engineered_raw.csv")
