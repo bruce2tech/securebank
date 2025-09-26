@@ -8,33 +8,20 @@ A comprehensive fraud detection system built with Flask, scikit-learn, and Docke
 - Docker
 - Python 3.9+ (for local development)
 - bash (for running test scripts)
-- data sources: customer data , transaction data, fraud_truth data
+- data sources: customer_data.csv , transaction_data.parquet, fraud_truth_data.json
 
 ### Initial setup
 From project root:
-Clone repo and store data sources in securebank/data_sources
+* 1. Clone repo and store data sources in securebank/data_sources
 
-creates engineered dataset in securebank/storage/datasets
-run: python engineer_from_raw.py
+* 2. Create engineered dataset in securebank/storage/datasets
+     Run: python engineer_from_raw.py
 
-create build docker image
-run: docker build -t securebank  .
+* 3. Create build docker image
+     Run: docker build -t securebank  .
 
-start container
-run: docker run -d -p 5000:5000 securebank_app
-
-
-### List models in the container
-docker exec securebank-app ls -la storage/models/
-
-### List datasets in the container
-docker exec securebank-app ls -la storage/datasets/
-
-### Copy datasets to local machine
-docker cp securebank-app:/app/storage/datasets/dataset_engineered_raw.csv ./storage/datasets
-
-### Copy models to local machine
-docker cp securebank-app:/app/storage/models/best_lgb_model.pkl ./storage/models
+* 4. Start container
+     Run: docker run -d -p 5000:5000 securebank_app
 
 ### Running the System
 
@@ -59,6 +46,18 @@ docker cp securebank-app:/app/storage/models/best_lgb_model.pkl ./storage/models
    ```bash
    ./train_model.sh
    ```
+
+### List datasets in the container
+docker exec securebank-app ls -la storage/datasets/
+
+### Copy datasets to local machine
+docker cp securebank-app:/app/storage/datasets/filename ./storage/datasets/filename
+
+### List models in the container
+docker exec securebank-app ls -la storage/models/
+
+### Copy models to local machine
+docker cp securebank-app:/app/storage/models/filename ./storage/models/filename
 
 ## 📁 Project Structure
 
