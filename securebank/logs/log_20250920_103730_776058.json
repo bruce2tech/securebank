@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-09-20T10:37:30.776040",
+  "endpoint": "/train_model",
+  "request_data": {
+    "dataset_name": "large_test_dataset"
+  },
+  "response_data": {
+    "status": "success",
+    "message": "Model trained successfully with enhanced features",
+    "model_info": {
+      "model_path": "output/fraud_model_20250920_103730_p0.394_r0.651.pkl",
+      "performance": {
+        "precision": 0.3941908713692946,
+        "recall": 0.6506849315068494,
+        "f1_score": 0.49095607235142114,
+        "accuracy": 0.9343333333333333
+      },
+      "training_time": 0.7143800258636475,
+      "validation_message": "Model does not meet requirements (Precision: 0.394, Recall: 0.651)"
+    },
+    "dataset_info": {
+      "path": "securebank/storage/datasets/large_test_dataset_20250920_103728.csv",
+      "size": 15000,
+      "columns": 72
+    },
+    "drift_analysis": {
+      "drift_checked": true,
+      "drift_report": {
+        "overall_severity": "medium",
+        "features_with_drift": 32,
+        "drift_percentage": 47.05882352941176,
+        "recommendations": [
+          "\u26a0\ufe0f HIGH: Significant drift detected. Schedule model validation and potential retraining.",
+          "\ud83c\udfaf Priority features for immediate attention: time_since_last_transaction, merchant_amt_count, merchant_amt_mean",
+          "\ud83d\udcc8 Monitor closely: 5 features showing moderate drift",
+          "\ud83c\udff7\ufe0f Categorical drift detected - check for new data sources or encoding changes",
+          "\ud83d\udcca Distributional drift detected - validate data processing pipeline"
+        ]
+      }
+    },
+    "timestamp": "2025-09-20T10:37:30.776033"
+  },
+  "processing_time_seconds": 1.22759,
+  "request_size_bytes": 38,
+  "response_size_bytes": 1208
+}

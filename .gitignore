@@ -1,0 +1,97 @@
+# Data files (large - exclude from repo)
+*.csv
+*.parquet
+data_sources/
+dataset_*.csv
+
+# Model artifacts
+*.pkl
+output/*.pkl
+storage/models/*.pkl
+
+# Keep specific test files
+!test.json
+!requirements.json
+!package.json
+
+# Logs and temporary output
+logs/*
+!logs/.gitkeep
+output/*
+!output/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+securebank/venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Backup files
+*_backup.py
+*_backup*.sh
+*_old.py
+*_old*.png
+backup_*/
+*_phase*.py
+
+# Test output directories
+test_feature_fix_*/
+
+# Keep architecture diagrams and visualizations (small images)
+!*.png
+!*.jpg
+!System_Architecture.png
+!Drift_Detection_Pipeline.png
+!Logging_Architecture.png
+!Production_Monitoring_Architecture.png
+!Partitition_Strategy.png
+
+# Storage directory - keep structure but not data
+storage/datasets/*
+!storage/datasets/.gitkeep
+storage/models/*
+!storage/models/.gitkeep
+
+# Development scripts to exclude
+check_docker_issue.sh
+debug_errors.sh
+diagnose_*.sh
+fix_*.sh
+setup_*.sh
+test_docker_*.sh
+test_enhanced_*.sh
+test_feature_fix.sh
+test_local.sh
+test_phase*.sh
+test_system.sh
+quick_test.py

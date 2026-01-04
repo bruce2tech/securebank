@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-09-20T09:39:22.893240",
+  "endpoint": "/create_dataset",
+  "request_data": {
+    "size": 3000,
+    "fraud_rate": 0.08,
+    "apply_quality_validation": true,
+    "apply_feature_engineering": true,
+    "create_behavioral": true,
+    "create_temporal": true,
+    "create_spatial": true,
+    "create_statistical": true,
+    "dataset_name": "enhanced_fraud_dataset"
+  },
+  "response_data": {
+    "status": "error",
+    "error": "window must be an integer 0 or greater",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/Securebank/app.py\", line 203, in create_enhanced_dataset\n    df = feature_engineer.engineer_features(\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/Securebank/modules/feature_engineering_pipeline.py\", line 59, in engineer_features\n    df_enhanced = self._create_statistical_features(df_enhanced)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/Securebank/modules/feature_engineering_pipeline.py\", line 239, in _create_statistical_features\n    df_sorted['rolling_txn_count_7d'] = df_sorted.groupby('cc_num')['amt'].transform(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/ai_enabled_sys2/lib/python3.11/site-packages/pandas/core/groupby/generic.py\", line 517, in transform\n    return self._transform(\n           ^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/ai_enabled_sys2/lib/python3.11/site-packages/pandas/core/groupby/groupby.py\", line 2027, in _transform\n    return self._transform_general(func, engine, engine_kwargs, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/ai_enabled_sys2/lib/python3.11/site-packages/pandas/core/groupby/generic.py\", line 557, in _transform_general\n    res = func(group, *args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/Securebank/modules/feature_engineering_pipeline.py\", line 240, in <lambda>\n    lambda x: x.rolling(window='7D', min_periods=1).count()\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/ai_enabled_sys2/lib/python3.11/site-packages/pandas/core/generic.py\", line 12599, in rolling\n    return Rolling(\n           ^^^^^^^^\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/ai_enabled_sys2/lib/python3.11/site-packages/pandas/core/window/rolling.py\", line 170, in __init__\n    self._validate()\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/ai_enabled_sys2/lib/python3.11/site-packages/pandas/core/window/rolling.py\", line 1914, in _validate\n    raise ValueError(\"window must be an integer 0 or greater\")\nValueError: window must be an integer 0 or greater\n",
+    "timestamp": "2025-09-20T09:39:22.893232"
+  },
+  "processing_time_seconds": 0.100901,
+  "request_size_bytes": 249,
+  "response_size_bytes": 2755
+}

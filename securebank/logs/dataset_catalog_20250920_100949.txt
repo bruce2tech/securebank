@@ -1,0 +1,57 @@
+
+# 📊 SECUREBANK DATASET CATALOG
+Generated: 2025-09-20 10:09:49
+
+## 📈 CATALOG OVERVIEW
+- **Total Datasets**: 4
+- **Total Versions**: 4
+- **Storage Used**: 9.86 MB
+- **Average Quality Score**: 0.90
+
+## 📋 DATASET INVENTORY
+
+### 📁 test_fraud_dataset_phase4
+- **Latest Version**: 1.1.0 (test_fraud_dataset_phase4_20250920_100949)
+- **Created**: 2025-09-20T10:09:49.268795
+- **Size**: 5,000 rows × 72 columns (3.08 MB)
+- **Quality Score**: 0.90
+- **Drift Score**: 0.00
+- **Total Versions**: 2
+- **Tags**: fraud_detection, banking, ml_training
+- **Description**: No description
+- **Previous Versions**: 1.0.0 
+
+### 📁 enhanced_fraud_dataset
+- **Latest Version**: 1.1.0 (enhanced_fraud_dataset_20250920_100949)
+- **Created**: 2025-09-20T10:09:49.691729
+- **Size**: 3,000 rows × 72 columns (1.85 MB)
+- **Quality Score**: 0.90
+- **Drift Score**: 0.00
+- **Total Versions**: 2
+- **Tags**: fraud_detection, banking, ml_training
+- **Description**: No description
+- **Previous Versions**: 1.0.0 
+
+## 🔗 LINEAGE SUMMARY
+
+- **Source Datasets**: 4
+- **Derived Datasets**: 0
+- **Merged Datasets**: 0
+- **Complex Lineages**: 0
+
+## 🏷️ DATASET TAGS
+- **fraud_detection**: 4 datasets
+- **banking**: 4 datasets
+- **ml_training**: 4 datasets
+
+## 📊 QUALITY METRICS
+- **High Quality (>0.8)**: 4 datasets
+- **Medium Quality (0.6-0.8)**: 0 datasets
+- **Low Quality (<0.6)**: 0 datasets
+
+## ⚠️ DRIFT ALERTS
+- **No Drift (<0.1)**: 4 datasets
+- **Low Drift (0.1-0.3)**: 0 datasets
+- **High Drift (≥0.3)**: 0 datasets
+
+## 🔧 MAINTENANCE RECOMMENDATIONS

@@ -1,0 +1,10 @@
+{
+  "version_id": "enhanced_fraud_dataset_20250920_110712_v1.11.0",
+  "dataset_id": "enhanced_fraud_dataset_20250920_110712",
+  "version_number": "1.11.0",
+  "previous_version": "enhanced_fraud_dataset_20250920_105932",
+  "changes_summary": "Dataset with quality validation and feature engineering",
+  "change_type": "minor",
+  "compatibility_notes": "",
+  "rollback_instructions": ""
+}

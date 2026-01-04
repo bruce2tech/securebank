@@ -1,0 +1,10 @@
+{
+  "version_id": "large_test_dataset_20250920_120745_v1.14.0",
+  "dataset_id": "large_test_dataset_20250920_120745",
+  "version_number": "1.14.0",
+  "previous_version": "large_test_dataset_20250920_113322",
+  "changes_summary": "Dataset with quality validation and feature engineering",
+  "change_type": "minor",
+  "compatibility_notes": "",
+  "rollback_instructions": ""
+}

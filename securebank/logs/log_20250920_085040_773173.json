@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-09-20T08:50:40.773168",
+  "endpoint": "/train_model",
+  "request_data": {
+    "dataset_name": "large_test_dataset"
+  },
+  "response_data": {
+    "status": "error",
+    "error": "No suitable dataset found for large_test_dataset",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/Securebank/app.py\", line 303, in train_enhanced_model\n    raise ValueError(f\"No suitable dataset found for {dataset_name}\")\nValueError: No suitable dataset found for large_test_dataset\n",
+    "timestamp": "2025-09-20T08:50:40.773164"
+  },
+  "processing_time_seconds": 0.000138,
+  "request_size_bytes": 38,
+  "response_size_bytes": 430
+}

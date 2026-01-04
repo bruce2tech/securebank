@@ -1,0 +1,18 @@
+{
+  "event_type": "prediction_request",
+  "request_data": {
+    "trans_date_trans_time": "2024-01-15 10:30:00",
+    "cc_num": 1234567890123456,
+    "unix_time": 1705318200,
+    "merchant": "store_6",
+    "category": "grocery_pos",
+    "amt": 395,
+    "merch_lat": 40.7128,
+    "merch_long": -74.006
+  },
+  "prediction": "legitimate",
+  "fraud_probability": 0.4443226017654361,
+  "processing_time_seconds": 0.006882190704345703,
+  "endpoint": "/predict",
+  "system_timestamp": "2025-09-24T18:35:34.345166"
+}

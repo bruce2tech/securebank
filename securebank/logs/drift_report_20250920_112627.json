@@ -1,0 +1,367 @@
+{
+  "timestamp": "2025-09-20T11:26:27.539498",
+  "baseline_period": "baseline_data",
+  "comparison_period": "current_data",
+  "total_features": 35,
+  "features_with_drift": 18,
+  "drift_percentage": 51.42857142857142,
+  "overall_severity": "high",
+  "feature_results": [
+    {
+      "feature_name": "cc_num",
+      "drift_detected": true,
+      "drift_score": 0.07853333333333334,
+      "drift_type": "distributional",
+      "test_statistic": 0.07853333333333334,
+      "p_value": 1.455578631316184e-20,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0000). Monitor closely."
+    },
+    {
+      "feature_name": "unix_time",
+      "drift_detected": false,
+      "drift_score": 0.014333333333333309,
+      "drift_type": "distributional",
+      "test_statistic": 0.014333333333333309,
+      "p_value": 0.4202914573999903,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "amt",
+      "drift_detected": false,
+      "drift_score": 0.013666666666666716,
+      "drift_type": "distributional",
+      "test_statistic": 0.013666666666666716,
+      "p_value": 0.4812280877721664,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "merch_lat",
+      "drift_detected": true,
+      "drift_score": 0.02360000000000001,
+      "drift_type": "distributional",
+      "test_statistic": 0.02360000000000001,
+      "p_value": 0.03019552987989582,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0358). Monitor closely."
+    },
+    {
+      "feature_name": "merch_long",
+      "drift_detected": false,
+      "drift_score": 0.015333333333333421,
+      "drift_type": "distributional",
+      "test_statistic": 0.015333333333333421,
+      "p_value": 0.3378029052394458,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "is_fraud",
+      "drift_detected": false,
+      "drift_score": 0.006000000000000005,
+      "drift_type": "distributional",
+      "test_statistic": 0.006000000000000005,
+      "p_value": 0.9991699774326308,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "distance_from_nyc",
+      "drift_detected": false,
+      "drift_score": 0.016533333333333344,
+      "drift_type": "distributional",
+      "test_statistic": 0.016533333333333344,
+      "p_value": 0.254088006357268,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "distance_from_chicago",
+      "drift_detected": false,
+      "drift_score": 0.015200000000000047,
+      "drift_type": "distributional",
+      "test_statistic": 0.015200000000000047,
+      "p_value": 0.3481431473673128,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "distance_from_la",
+      "drift_detected": false,
+      "drift_score": 0.015933333333333244,
+      "drift_type": "distributional",
+      "test_statistic": 0.015933333333333244,
+      "p_value": 0.29384383140983594,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "distance_from_houston",
+      "drift_detected": true,
+      "drift_score": 0.027533333333333354,
+      "drift_type": "distributional",
+      "test_statistic": 0.027533333333333354,
+      "p_value": 0.0066611261968765375,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0051). Monitor closely."
+    },
+    {
+      "feature_name": "distance_from_atlanta",
+      "drift_detected": false,
+      "drift_score": 0.011199999999999988,
+      "drift_type": "distributional",
+      "test_statistic": 0.011199999999999988,
+      "p_value": 0.7301925377697202,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "lat_rounded",
+      "drift_detected": true,
+      "drift_score": 0.022866666666666702,
+      "drift_type": "distributional",
+      "test_statistic": 0.022866666666666702,
+      "p_value": 0.039008981838930645,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0351). Monitor closely."
+    },
+    {
+      "feature_name": "long_rounded",
+      "drift_detected": false,
+      "drift_score": 0.015266666666666762,
+      "drift_type": "distributional",
+      "test_statistic": 0.015266666666666762,
+      "p_value": 0.34294718289361004,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "distance_from_center",
+      "drift_detected": true,
+      "drift_score": 0.04633333333333334,
+      "drift_type": "distributional",
+      "test_statistic": 0.04633333333333334,
+      "p_value": 1.959649632932366e-07,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0127). Monitor closely."
+    },
+    {
+      "feature_name": "is_location_outlier",
+      "drift_detected": false,
+      "drift_score": 0.0005333333333333856,
+      "drift_type": "distributional",
+      "test_statistic": 0.0005333333333333856,
+      "p_value": 1.0,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "customer_amt_count",
+      "drift_detected": true,
+      "drift_score": 0.027666666666666673,
+      "drift_type": "distributional",
+      "test_statistic": 0.027666666666666673,
+      "p_value": 0.006302738310142722,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Monitor closely."
+    },
+    {
+      "feature_name": "customer_amt_mean",
+      "drift_detected": false,
+      "drift_score": 0.020933333333333304,
+      "drift_type": "distributional",
+      "test_statistic": 0.020933333333333304,
+      "p_value": 0.07371725287152386,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "customer_amt_std",
+      "drift_detected": true,
+      "drift_score": 0.02846666666666664,
+      "drift_type": "distributional",
+      "test_statistic": 0.02846666666666664,
+      "p_value": 0.004497638277311311,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Monitor closely."
+    },
+    {
+      "feature_name": "customer_amt_min",
+      "drift_detected": true,
+      "drift_score": 0.04913333333333335,
+      "drift_type": "distributional",
+      "test_statistic": 0.04913333333333335,
+      "p_value": 2.6294207382700365e-08,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0000). Monitor closely."
+    },
+    {
+      "feature_name": "customer_amt_max",
+      "drift_detected": true,
+      "drift_score": 0.032399999999999984,
+      "drift_type": "distributional",
+      "test_statistic": 0.032399999999999984,
+      "p_value": 0.0007443268897957953,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Monitor closely."
+    },
+    {
+      "feature_name": "customer_amt_sum",
+      "drift_detected": true,
+      "drift_score": 0.02453333333333335,
+      "drift_type": "distributional",
+      "test_statistic": 0.02453333333333335,
+      "p_value": 0.021543509298776877,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Monitor closely."
+    },
+    {
+      "feature_name": "customer_merchant_nunique",
+      "drift_detected": true,
+      "drift_score": 0.03786666666666666,
+      "drift_type": "distributional",
+      "test_statistic": 0.03786666666666666,
+      "p_value": 4.153255668767054e-05,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Monitor closely."
+    },
+    {
+      "feature_name": "customer_category_nunique",
+      "drift_detected": true,
+      "drift_score": 0.025866666666666704,
+      "drift_type": "distributional",
+      "test_statistic": 0.025866666666666704,
+      "p_value": 0.013001602771283993,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Monitor closely."
+    },
+    {
+      "feature_name": "customer_daily_txn_mean",
+      "drift_detected": true,
+      "drift_score": 0.02746666666666664,
+      "drift_type": "distributional",
+      "test_statistic": 0.02746666666666664,
+      "p_value": 0.006847205836709526,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0024). Monitor closely."
+    },
+    {
+      "feature_name": "customer_daily_txn_std",
+      "drift_detected": true,
+      "drift_score": 0.02746666666666664,
+      "drift_type": "distributional",
+      "test_statistic": 0.02746666666666664,
+      "p_value": 0.006847205836709526,
+      "threshold": 0.05,
+      "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0021). Monitor closely."
+    },
+    {
+      "feature_name": "is_familiar_merchant",
+      "drift_detected": false,
+      "drift_score": 0.00013333333333331865,
+      "drift_type": "distributional",
+      "test_statistic": 0.00013333333333331865,
+      "p_value": 1.0,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "is_familiar_category",
+      "drift_detected": false,
+      "drift_score": 0.002666666666666706,
+      "drift_type": "distributional",
+      "test_statistic": 0.002666666666666706,
+      "p_value": 1.0,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "amount_zscore",
+      "drift_detected": false,
+      "drift_score": 0.0174,
+      "drift_type": "distributional",
+      "test_statistic": 0.0174,
+      "p_value": 0.20387804726057257,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "is_amount_outlier",
+      "drift_detected": false,
+      "drift_score": 0.0004666666666667263,
+      "drift_type": "distributional",
+      "test_statistic": 0.0004666666666667263,
+      "p_value": 1.0,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "customer_avg_amount",
+      "drift_detected": false,
+      "drift_score": 0.020933333333333304,
+      "drift_type": "distributional",
+      "test_statistic": 0.020933333333333304,
+      "p_value": 0.07371725287152386,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "amount_ratio_to_avg",
+      "drift_detected": false,
+      "drift_score": 0.00993333333333335,
+      "drift_type": "distributional",
+      "test_statistic": 0.00993333333333335,
+      "p_value": 0.8494127172099244,
+      "threshold": 0.05,
+      "recommendation": "No significant drift detected."
+    },
+    {
+      "feature_name": "merchant",
+      "drift_detected": true,
+      "drift_score": 0.9999981348229208,
+      "drift_type": "categorical",
+      "test_statistic": 76.97824282578011,
+      "p_value": 1.8651770792611628e-06,
+      "threshold": 0.05,
+      "recommendation": "Monitor category distribution changes"
+    },
+    {
+      "feature_name": "category",
+      "drift_detected": true,
+      "drift_score": 0.9999969242631389,
+      "drift_type": "categorical",
+      "test_statistic": 46.122795501941276,
+      "p_value": 3.075736861105136e-06,
+      "threshold": 0.05,
+      "recommendation": "Monitor category distribution changes"
+    },
+    {
+      "feature_name": "customer_favorite_merchant",
+      "drift_detected": true,
+      "drift_score": 1.0,
+      "drift_type": "categorical",
+      "test_statistic": 10000000786.300365,
+      "p_value": 0.0,
+      "threshold": 0.05,
+      "recommendation": "New categories detected: ['UNKNOWN_MERCHANT']. Consider retraining."
+    },
+    {
+      "feature_name": "customer_favorite_category",
+      "drift_detected": true,
+      "drift_score": 1.0,
+      "drift_type": "categorical",
+      "test_statistic": 129.41662556638988,
+      "p_value": 2.28445947183963e-22,
+      "threshold": 0.05,
+      "recommendation": "Monitor category distribution changes"
+    }
+  ],
+  "recommendations": [
+    "\ud83d\udea8 CRITICAL: Over 50% of features show drift. Immediate model retraining required.",
+    "\ud83c\udfaf Priority features for immediate attention: merchant, category, customer_favorite_merchant",
+    "\ud83c\udff7\ufe0f Categorical drift detected - check for new data sources or encoding changes",
+    "\ud83d\udcca Distributional drift detected - validate data processing pipeline"
+  ]
+}

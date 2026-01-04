@@ -1,0 +1,133 @@
+{
+  "dataset_id": "enhanced_fraud_dataset_20250920_101402",
+  "version": "1.2.0",
+  "name": "enhanced_fraud_dataset",
+  "created_at": "2025-09-20T10:14:02.098227",
+  "created_by": "securebank_system",
+  "file_path": "securebank/storage/datasets/enhanced_fraud_dataset_20250920_101402.csv",
+  "file_size_bytes": 1936756,
+  "row_count": 3000,
+  "column_count": 72,
+  "data_hash": "070250a6af79cf686b5802db9b31e18c",
+  "schema_hash": "fd799859588ec65217e19a44c311479e",
+  "quality_score": 0.9033333333333333,
+  "drift_score": 0.0,
+  "parent_datasets": [],
+  "transformations_applied": [
+    {
+      "operation": "enhanced_dataset_creation",
+      "description": "Dataset with quality validation and feature engineering",
+      "transformation_log": [
+        {
+          "step": "base_generation",
+          "operation": "synthetic_data_creation",
+          "parameters": {
+            "size": 3000,
+            "fraud_rate": 0.08
+          },
+          "timestamp": "2025-09-20T10:14:01.958666"
+        },
+        {
+          "step": "quality_validation",
+          "operation": "data_quality_assessment",
+          "results": {
+            "overall_score": 0.9033333333333333,
+            "issues_count": 2,
+            "recommendations_count": 2
+          },
+          "timestamp": "2025-09-20T10:14:01.962403"
+        },
+        {
+          "step": "feature_engineering",
+          "operation": "advanced_feature_creation",
+          "results": {
+            "features_added": 63,
+            "new_feature_names": [
+              "transaction_hour",
+              "transaction_day_of_week",
+              "transaction_day_of_month",
+              "transaction_month",
+              "transaction_year",
+              "transaction_quarter",
+              "is_weekend",
+              "is_holiday_season",
+              "is_business_hour",
+              "is_late_night",
+              "hour_sin",
+              "hour_cos",
+              "day_sin",
+              "day_cos",
+              "month_sin",
+              "month_cos",
+              "time_since_last_transaction",
+              "days_since_first_transaction",
+              "distance_from_nyc",
+              "distance_from_chicago",
+              "distance_from_la",
+              "distance_from_houston",
+              "distance_from_atlanta",
+              "lat_rounded",
+              "long_rounded",
+              "geo_cluster",
+              "distance_from_center",
+              "is_location_outlier",
+              "customer_amt_count",
+              "customer_amt_mean",
+              "customer_amt_std",
+              "customer_amt_min",
+              "customer_amt_max",
+              "customer_amt_sum",
+              "customer_merchant_nunique",
+              "customer_category_nunique",
+              "date_only",
+              "customer_daily_txn_mean",
+              "customer_daily_txn_std",
+              "customer_favorite_merchant",
+              "customer_favorite_category",
+              "amount_zscore",
+              "is_amount_outlier",
+              "customer_avg_amount",
+              "amount_ratio_to_avg",
+              "is_familiar_merchant",
+              "is_familiar_category",
+              "merchant_amt_count",
+              "merchant_amt_mean",
+              "merchant_amt_std",
+              "merchant_amt_median",
+              "merchant_is_fraud_mean",
+              "category_amt_count",
+              "category_amt_mean",
+              "category_amt_std",
+              "category_amt_median",
+              "category_is_fraud_mean",
+              "rolling_txn_count_7d",
+              "rolling_avg_amount_7d",
+              "rolling_std_amount_7d",
+              "hour_category_interaction",
+              "hour_amount_interaction",
+              "weekend_amount_interaction"
+            ]
+          },
+          "timestamp": "2025-09-20T10:14:02.098211"
+        }
+      ],
+      "parameters": {
+        "size": 3000,
+        "fraud_rate": 0.08,
+        "apply_quality_validation": true,
+        "apply_feature_engineering": true,
+        "create_behavioral": true,
+        "create_temporal": true,
+        "create_spatial": true,
+        "create_statistical": true,
+        "dataset_name": "enhanced_fraud_dataset"
+      }
+    }
+  ],
+  "tags": [
+    "fraud_detection",
+    "banking",
+    "ml_training"
+  ],
+  "description": ""
+}

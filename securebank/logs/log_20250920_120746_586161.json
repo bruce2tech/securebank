@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-09-20T12:07:46.586142",
+  "endpoint": "/train_model",
+  "request_data": {
+    "dataset_name": "large_test_dataset"
+  },
+  "response_data": {
+    "status": "success",
+    "message": "Model trained successfully with enhanced features",
+    "model_info": {
+      "model_path": "output/fraud_model_20250920_120746_p0.389_r0.593.pkl",
+      "performance": {
+        "precision": 0.3891402714932127,
+        "recall": 0.593103448275862,
+        "f1_score": 0.4699453551912568,
+        "accuracy": 0.9353333333333333
+      },
+      "training_time": 0.5491111278533936,
+      "validation_message": "Model does not meet requirements (Precision: 0.389, Recall: 0.593)"
+    },
+    "dataset_info": {
+      "path": "securebank/storage/datasets/large_test_dataset_20250920_120745.csv",
+      "size": 15000,
+      "columns": 64
+    },
+    "drift_analysis": {
+      "drift_checked": true,
+      "drift_report": {
+        "overall_severity": "high",
+        "features_with_drift": 19,
+        "drift_percentage": 54.285714285714285,
+        "recommendations": [
+          "\ud83d\udea8 CRITICAL: Over 50% of features show drift. Immediate model retraining required.",
+          "\ud83c\udfaf Priority features for immediate attention: merchant, category, customer_favorite_merchant",
+          "\ud83c\udff7\ufe0f Categorical drift detected - check for new data sources or encoding changes",
+          "\ud83d\udcca Distributional drift detected - validate data processing pipeline"
+        ]
+      }
+    },
+    "timestamp": "2025-09-20T12:07:46.586135"
+  },
+  "processing_time_seconds": 0.836096,
+  "request_size_bytes": 38,
+  "response_size_bytes": 1122
+}

@@ -1,0 +1,131 @@
+
+# 🔍 DATA DRIFT DETECTION REPORT
+Generated: 2025-09-20T10:40:27.156479
+
+## 📊 EXECUTIVE SUMMARY
+- **Overall Severity**: 🟠 MEDIUM
+- **Features Analyzed**: 68
+- **Features with Drift**: 31
+- **Drift Percentage**: 45.6%
+
+## 🚨 DRIFT ALERTS
+
+### 🔴 HIGH PRIORITY (9 features)
+- **time_since_last_transaction**: Score 0.345, p-value 0.0000
+  💡 High drift detected. Distribution shift detected (MW p=0.0000). Variance change detected: 0.37x baseline. Consider immediate model retraining.
+- **merchant_amt_count**: Score 0.996, p-value 0.0000
+  💡 High drift detected. Distribution shift detected (MW p=0.0000). Significant mean shift: 22.41 std devs. Variance change detected: 2.42x baseline. Consider immediate model retraining.
+- **merchant_amt_mean**: Score 0.390, p-value 0.0000
+  💡 High drift detected. Distribution shift detected (MW p=0.0000). Consider immediate model retraining.
+- **merchant_amt_std**: Score 0.472, p-value 0.0000
+  💡 High drift detected. Distribution shift detected (MW p=0.0000). Consider immediate model retraining.
+- **category_amt_count**: Score 1.000, p-value 0.0000
+  💡 High drift detected. Distribution shift detected (MW p=0.0000). Significant mean shift: 43.99 std devs. Consider immediate model retraining.
+- **merchant**: Score 1.000, p-value 0.0000
+  💡 Monitor category distribution changes
+- **category**: Score 1.000, p-value 0.0005
+  💡 Monitor category distribution changes
+- **customer_favorite_merchant**: Score 1.000, p-value 0.0000
+  💡 Monitor category distribution changes
+- **customer_favorite_category**: Score 1.000, p-value 0.0000
+  💡 Monitor category distribution changes
+
+### 🟠 MEDIUM PRIORITY (6 features)
+- **merchant_amt_median**: Score 0.266, p-value 0.0000
+- **merchant_is_fraud_mean**: Score 0.270, p-value 0.0000
+- **category_amt_mean**: Score 0.160, p-value 0.0000
+- **category_amt_std**: Score 0.256, p-value 0.0000
+- **category_amt_median**: Score 0.162, p-value 0.0000
+- **category_is_fraud_mean**: Score 0.239, p-value 0.0000
+
+### 🟡 LOW PRIORITY (16 features)
+- cc_num: Score 0.057
+- merch_lat: Score 0.029
+- distance_from_nyc: Score 0.025
+- distance_from_houston: Score 0.028
+- lat_rounded: Score 0.028
+- distance_from_center: Score 0.053
+- customer_amt_count: Score 0.023
+- customer_amt_mean: Score 0.036
+- customer_amt_std: Score 0.030
+- customer_amt_min: Score 0.044
+- customer_amt_max: Score 0.035
+- customer_amt_sum: Score 0.032
+- customer_merchant_nunique: Score 0.025
+- customer_avg_amount: Score 0.036
+- rolling_avg_amount_7d: Score 0.034
+- rolling_std_amount_7d: Score 0.023
+
+## 💡 RECOMMENDATIONS
+1. ⚠️ HIGH: Significant drift detected. Schedule model validation and potential retraining.
+2. 🎯 Priority features for immediate attention: time_since_last_transaction, merchant_amt_count, merchant_amt_mean
+3. 📈 Monitor closely: 6 features showing moderate drift
+4. 🏷️ Categorical drift detected - check for new data sources or encoding changes
+5. 📊 Distributional drift detected - validate data processing pipeline
+
+## 📈 DETAILED ANALYSIS
+
+### Drift Detection Statistics
+- **Detection Threshold**: 0.05
+- **Statistical Tests Used**: 
+  - Kolmogorov-Smirnov (numeric features)
+  - Chi-square (categorical features)
+  - Mann-Whitney U (distribution shift)
+
+### Feature Breakdown by Type
+- **Categorical Features**: 4 (4 with drift)
+- **Numeric Features**: 64 (27 with drift)
+
+## 🔧 TECHNICAL DETAILS
+
+### Most Significant Drifts
+
+**category_amt_count**
+- Type: distributional
+- Drift Score: 1.0000
+- Test Statistic: 1.0000
+- P-value: 0.000000
+- Recommendation: High drift detected. Distribution shift detected (MW p=0.0000). Significant mean shift: 43.99 std devs. Consider immediate model retraining.
+
+**customer_favorite_merchant**
+- Type: categorical
+- Drift Score: 1.0000
+- Test Statistic: 1318.6102
+- P-value: 0.000000
+- Recommendation: Monitor category distribution changes
+
+**customer_favorite_category**
+- Type: categorical
+- Drift Score: 1.0000
+- Test Statistic: 313.3797
+- P-value: 0.000000
+- Recommendation: Monitor category distribution changes
+
+**merchant**
+- Type: categorical
+- Drift Score: 1.0000
+- Test Statistic: 89.5016
+- P-value: 0.000000
+- Recommendation: Monitor category distribution changes
+
+**category**
+- Type: categorical
+- Drift Score: 0.9995
+- Test Statistic: 33.3813
+- P-value: 0.000456
+- Recommendation: Monitor category distribution changes
+
+## 📅 MONITORING SCHEDULE
+Based on drift severity, recommended monitoring frequency:
+- **High Drift Features**: Daily monitoring
+- **Medium Drift Features**: Weekly monitoring  
+- **Low Drift Features**: Monthly monitoring
+- **Stable Features**: Quarterly monitoring
+
+## ⚠️ ACTION ITEMS
+1. **Immediate** (9 features): Investigate root causes and consider model retraining
+2. **Short-term** (6 features): Increase monitoring and prepare for potential intervention
+3. **Long-term** (16 features): Monitor trends and document changes
+
+---
+*This report was generated by SecureBank's automated drift detection system.*

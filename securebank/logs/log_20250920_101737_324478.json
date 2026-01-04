@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-09-20T10:17:37.324475",
+  "endpoint": "/detect_drift",
+  "request_data": {
+    "baseline_path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_101401.csv",
+    "dataset_path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_101733.csv"
+  },
+  "response_data": {
+    "status": "error",
+    "error": "Object of type bool_ is not JSON serializable",
+    "timestamp": "2025-09-20T10:17:37.324473"
+  },
+  "processing_time_seconds": 0.276735,
+  "request_size_bytes": 187,
+  "response_size_bytes": 120
+}

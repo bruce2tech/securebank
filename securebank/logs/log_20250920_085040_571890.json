@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-09-20T08:50:40.571885",
+  "endpoint": "/dataset_catalog",
+  "request_data": {},
+  "response_data": {
+    "status": "success",
+    "catalog_summary": {
+      "total_datasets": 0,
+      "high_quality_datasets": 0,
+      "datasets_with_drift": 0,
+      "total_storage_mb": 0.0
+    },
+    "catalog_path": "securebank/logs/dataset_catalog_20250920_085040.txt",
+    "datasets": [],
+    "timestamp": "2025-09-20T08:50:40.571878"
+  },
+  "processing_time_seconds": 0.000224,
+  "request_size_bytes": 2,
+  "response_size_bytes": 272
+}

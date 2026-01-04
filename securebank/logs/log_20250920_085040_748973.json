@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-09-20T08:50:40.748967",
+  "endpoint": "/create_dataset",
+  "request_data": {
+    "size": 25000,
+    "apply_quality_validation": true,
+    "apply_feature_engineering": true,
+    "dataset_name": "large_test_dataset"
+  },
+  "response_data": {
+    "status": "error",
+    "error": "'RawDataHandler' object has no attribute 'generate_synthetic_dataset'",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/patrickbruce/Documents/Creating_AI_Enabled_Systems/Securebank/app.py\", line 158, in create_enhanced_dataset\n    df = data_handler.generate_synthetic_dataset(\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'RawDataHandler' object has no attribute 'generate_synthetic_dataset'\n",
+    "timestamp": "2025-09-20T08:50:40.748962"
+  },
+  "processing_time_seconds": 0.000224,
+  "request_size_bytes": 122,
+  "response_size_bytes": 513
+}

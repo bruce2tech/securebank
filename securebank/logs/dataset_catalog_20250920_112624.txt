@@ -1,0 +1,70 @@
+
+# 📊 SECUREBANK DATASET CATALOG
+Generated: 2025-09-20 11:26:24
+
+## 📈 CATALOG OVERVIEW
+- **Total Datasets**: 41
+- **Total Versions**: 41
+- **Storage Used**: 164.59 MB
+- **Average Quality Score**: 0.67
+
+## 📋 DATASET INVENTORY
+
+### 📁 test_fraud_dataset_phase4
+- **Latest Version**: 1.14.0 (test_fraud_dataset_phase4_20250920_112619)
+- **Created**: 2025-09-20T11:26:19.514712
+- **Size**: 5,000 rows × 64 columns (2.75 MB)
+- **Quality Score**: 0.39
+- **Drift Score**: 0.00
+- **Total Versions**: 15
+- **Tags**: fraud_detection, banking, ml_training
+- **Description**: No description
+- **Previous Versions**: 1.13.0 1.12.0 1.11.0 1.10.0 1.9.0 ... (9 more)
+
+### 📁 enhanced_fraud_dataset
+- **Latest Version**: 1.14.0 (enhanced_fraud_dataset_20250920_112620)
+- **Created**: 2025-09-20T11:26:20.028900
+- **Size**: 3,000 rows × 64 columns (1.65 MB)
+- **Quality Score**: 0.90
+- **Drift Score**: 0.00
+- **Total Versions**: 15
+- **Tags**: fraud_detection, banking, ml_training
+- **Description**: No description
+- **Previous Versions**: 1.13.0 1.12.0 1.11.0 1.10.0 1.9.0 ... (9 more)
+
+### 📁 large_test_dataset
+- **Latest Version**: 1.10.0 (large_test_dataset_20250920_111926)
+- **Created**: 2025-09-20T11:19:26.530794
+- **Size**: 15,000 rows × 64 columns (8.28 MB)
+- **Quality Score**: 0.50
+- **Drift Score**: 0.54
+- **Total Versions**: 11
+- **Tags**: fraud_detection, banking, ml_training
+- **Description**: No description
+- **Previous Versions**: 1.9.0 1.8.0 1.7.0 1.6.0 1.5.0 ... (5 more)
+
+## 🔗 LINEAGE SUMMARY
+
+- **Source Datasets**: 41
+- **Derived Datasets**: 0
+- **Merged Datasets**: 0
+- **Complex Lineages**: 0
+
+## 🏷️ DATASET TAGS
+- **fraud_detection**: 41 datasets
+- **banking**: 41 datasets
+- **ml_training**: 41 datasets
+
+## 📊 QUALITY METRICS
+- **High Quality (>0.8)**: 19 datasets
+- **Medium Quality (0.6-0.8)**: 0 datasets
+- **Low Quality (<0.6)**: 22 datasets
+
+## ⚠️ DRIFT ALERTS
+- **No Drift (<0.1)**: 31 datasets
+- **Low Drift (0.1-0.3)**: 0 datasets
+- **High Drift (≥0.3)**: 10 datasets
+
+## 🔧 MAINTENANCE RECOMMENDATIONS
+1. **High Priority**: 10 datasets with significant drift require attention
+2. **Quality Issues**: 22 datasets need quality improvement

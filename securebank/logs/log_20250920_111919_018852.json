@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-09-20T11:19:19.018842",
+  "endpoint": "/health",
+  "request_data": {},
+  "response_data": {
+    "status": "healthy",
+    "timestamp": "2025-09-20T11:19:19.018828",
+    "components": {
+      "data_handler": "operational",
+      "fraud_model": "not_loaded",
+      "quality_validator": "operational",
+      "feature_engineer": "operational",
+      "drift_monitor": "operational",
+      "dataset_manager": "operational"
+    },
+    "system_info": {
+      "current_model": "None",
+      "datasets_tracked": 36,
+      "drift_monitoring": {
+        "monitoring_initialized": false,
+        "monitored_features": 0,
+        "baseline_set": false,
+        "config": null
+      }
+    }
+  },
+  "processing_time_seconds": 1.1e-05,
+  "request_size_bytes": 2,
+  "response_size_bytes": 462
+}

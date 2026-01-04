@@ -1,0 +1,332 @@
+2025-09-20 08:50:40,352 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 08:50:40,413 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 08:50:40,414 - securebank - INFO - /create_dataset - Status: error - Time: 0.000s
+2025-09-20 08:50:40,440 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 08:50:40,441 - securebank - INFO - /create_dataset - Status: error - Time: 0.000s
+2025-09-20 08:50:40,469 - securebank - INFO - /quality_assessment - Status: error - Time: 0.001s
+2025-09-20 08:50:40,494 - securebank - INFO - /train_model - Status: error - Time: 0.000s
+2025-09-20 08:50:40,521 - securebank - INFO - /feature_analysis - Status: error - Time: 0.000s
+2025-09-20 08:50:40,547 - securebank - INFO - /predict - Status: error - Time: 0.000s
+2025-09-20 08:50:40,572 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 08:50:40,615 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 08:50:40,637 - securebank - INFO - /detect_drift - Status: error - Time: 0.000s
+2025-09-20 08:50:40,663 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 08:50:40,706 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 08:50:40,748 - securebank - INFO - Creating enhanced dataset: size=25000, quality_validation=True
+2025-09-20 08:50:40,749 - securebank - INFO - /create_dataset - Status: error - Time: 0.000s
+2025-09-20 08:50:40,773 - securebank - INFO - /train_model - Status: error - Time: 0.000s
+2025-09-20 09:35:18,201 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 09:35:18,264 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 09:35:18,439 - securebank - INFO - /create_dataset - Status: error - Time: 0.175s
+2025-09-20 09:35:18,469 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 09:35:18,569 - securebank - INFO - /create_dataset - Status: error - Time: 0.100s
+2025-09-20 09:35:18,647 - securebank - INFO - /predict - Status: error - Time: 0.000s
+2025-09-20 09:35:18,674 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 09:35:18,719 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 09:39:22,548 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 09:39:22,596 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 09:39:22,761 - securebank - INFO - /create_dataset - Status: error - Time: 0.164s
+2025-09-20 09:39:22,792 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 09:39:22,893 - securebank - INFO - /create_dataset - Status: error - Time: 0.101s
+2025-09-20 09:39:22,975 - securebank - INFO - /predict - Status: error - Time: 0.000s
+2025-09-20 09:39:23,002 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 09:39:23,049 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:05:49,351 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:05:49,400 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:05:49,896 - securebank - INFO - /create_dataset - Status: success - Time: 0.496s
+2025-09-20 10:05:49,947 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:05:50,238 - securebank - INFO - /create_dataset - Status: success - Time: 0.290s
+2025-09-20 10:05:50,336 - securebank - INFO - /predict - Status: error - Time: 0.000s
+2025-09-20 10:05:50,364 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:05:50,411 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:05:50,431 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_100549 - Status: success - Time: 0.000s
+2025-09-20 10:09:48,941 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:09:48,988 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:09:49,477 - securebank - INFO - /create_dataset - Status: success - Time: 0.488s
+2025-09-20 10:09:49,527 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:09:49,817 - securebank - INFO - /create_dataset - Status: success - Time: 0.290s
+2025-09-20 10:09:49,921 - securebank - INFO - /predict - Status: error - Time: 0.000s
+2025-09-20 10:09:49,948 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:09:49,996 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:09:50,015 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_100549 - Status: success - Time: 0.000s
+2025-09-20 10:14:01,346 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:14:01,393 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:14:01,885 - securebank - INFO - /create_dataset - Status: success - Time: 0.492s
+2025-09-20 10:14:01,933 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:14:02,228 - securebank - INFO - /create_dataset - Status: success - Time: 0.294s
+2025-09-20 10:14:02,331 - securebank - INFO - /predict - Status: error - Time: 0.000s
+2025-09-20 10:14:02,359 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:14:02,409 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:14:02,428 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_100549 - Status: success - Time: 0.000s
+2025-09-20 10:17:33,430 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:17:33,478 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:17:33,971 - securebank - INFO - /create_dataset - Status: success - Time: 0.492s
+2025-09-20 10:17:34,021 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:17:34,312 - securebank - INFO - /create_dataset - Status: success - Time: 0.290s
+2025-09-20 10:17:36,414 - securebank - INFO - /quality_assessment - Status: success - Time: 0.034s
+2025-09-20 10:17:36,678 - securebank - INFO - /train_model - Status: success - Time: 0.214s
+2025-09-20 10:17:36,858 - securebank - INFO - /feature_analysis - Status: error - Time: 0.130s
+2025-09-20 10:17:36,900 - securebank - INFO - /predict - Status: error - Time: 0.012s
+2025-09-20 10:17:36,929 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:17:36,977 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:17:36,996 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_100549 - Status: success - Time: 0.000s
+2025-09-20 10:17:37,324 - securebank - INFO - /detect_drift - Status: success - Time: 0.276s
+2025-09-20 10:17:37,324 - securebank - INFO - /detect_drift - Status: error - Time: 0.277s
+2025-09-20 10:17:37,354 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:17:37,401 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:17:37,449 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:17:38,851 - securebank - INFO - /create_dataset - Status: success - Time: 1.402s
+2025-09-20 10:17:39,478 - securebank - INFO - /train_model - Status: error - Time: 0.575s
+2025-09-20 10:30:01,838 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:30:01,899 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:30:02,392 - securebank - INFO - /create_dataset - Status: success - Time: 0.493s
+2025-09-20 10:30:02,439 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:30:02,732 - securebank - INFO - /create_dataset - Status: success - Time: 0.293s
+2025-09-20 10:30:04,825 - securebank - INFO - /quality_assessment - Status: success - Time: 0.032s
+2025-09-20 10:30:05,078 - securebank - INFO - /train_model - Status: success - Time: 0.203s
+2025-09-20 10:30:09,337 - securebank - INFO - /feature_analysis - Status: success - Time: 4.209s
+2025-09-20 10:30:09,399 - securebank - INFO - /predict - Status: error - Time: 0.012s
+2025-09-20 10:30:09,428 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:30:09,477 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:30:09,497 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_100949 - Status: success - Time: 0.000s
+2025-09-20 10:30:09,825 - securebank - INFO - /detect_drift - Status: success - Time: 0.276s
+2025-09-20 10:30:09,825 - securebank - INFO - /detect_drift - Status: error - Time: 0.276s
+2025-09-20 10:30:09,855 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:30:09,903 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:30:09,951 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:30:11,353 - securebank - INFO - /create_dataset - Status: success - Time: 1.402s
+2025-09-20 10:30:12,681 - securebank - INFO - /train_model - Status: success - Time: 1.276s
+2025-09-20 10:37:21,959 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:37:22,024 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:37:22,525 - securebank - INFO - /create_dataset - Status: success - Time: 0.501s
+2025-09-20 10:37:22,570 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:37:22,868 - securebank - INFO - /create_dataset - Status: success - Time: 0.297s
+2025-09-20 10:37:24,983 - securebank - INFO - /quality_assessment - Status: success - Time: 0.042s
+2025-09-20 10:37:25,245 - securebank - INFO - /train_model - Status: success - Time: 0.212s
+2025-09-20 10:37:27,230 - securebank - INFO - /feature_analysis - Status: success - Time: 1.941s
+2025-09-20 10:37:27,292 - securebank - INFO - /predict - Status: error - Time: 0.012s
+2025-09-20 10:37:27,323 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:37:27,372 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:37:27,390 - securebank - INFO - /dataset_lineage/large_test_dataset_20250920_101738 - Status: success - Time: 0.000s
+2025-09-20 10:37:27,946 - securebank - INFO - /detect_drift - Status: success - Time: 0.506s
+2025-09-20 10:37:27,995 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:37:28,043 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:37:28,091 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:37:29,496 - securebank - INFO - /create_dataset - Status: success - Time: 1.405s
+2025-09-20 10:37:30,776 - securebank - INFO - /train_model - Status: success - Time: 1.228s
+2025-09-20 10:40:18,982 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:40:19,033 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:40:19,549 - securebank - INFO - /create_dataset - Status: success - Time: 0.516s
+2025-09-20 10:40:19,602 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:40:19,906 - securebank - INFO - /create_dataset - Status: success - Time: 0.304s
+2025-09-20 10:40:22,004 - securebank - INFO - /quality_assessment - Status: success - Time: 0.033s
+2025-09-20 10:40:22,267 - securebank - INFO - /train_model - Status: success - Time: 0.212s
+2025-09-20 10:40:24,323 - securebank - INFO - /feature_analysis - Status: success - Time: 2.007s
+2025-09-20 10:40:24,388 - securebank - INFO - /predict - Status: error - Time: 0.013s
+2025-09-20 10:40:24,419 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:40:24,469 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:40:24,488 - securebank - INFO - /dataset_lineage/enhanced_fraud_dataset_20250920_100949 - Status: success - Time: 0.000s
+2025-09-20 10:40:25,039 - securebank - INFO - /detect_drift - Status: success - Time: 0.502s
+2025-09-20 10:40:25,089 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:40:25,136 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:40:25,183 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:40:26,592 - securebank - INFO - /create_dataset - Status: success - Time: 1.410s
+2025-09-20 10:40:27,903 - securebank - INFO - /train_model - Status: success - Time: 1.261s
+2025-09-20 10:49:27,179 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:49:27,232 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:49:27,815 - securebank - INFO - /create_dataset - Status: success - Time: 0.583s
+2025-09-20 10:49:27,865 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:49:28,232 - securebank - INFO - /create_dataset - Status: success - Time: 0.366s
+2025-09-20 10:49:30,330 - securebank - INFO - /quality_assessment - Status: success - Time: 0.034s
+2025-09-20 10:49:30,575 - securebank - INFO - /train_model - Status: success - Time: 0.196s
+2025-09-20 10:49:32,877 - securebank - INFO - /feature_analysis - Status: success - Time: 2.252s
+2025-09-20 10:49:32,930 - securebank - INFO - /predict - Status: error - Time: 0.001s
+2025-09-20 10:49:32,959 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:49:33,007 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:49:33,025 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_104019 - Status: success - Time: 0.000s
+2025-09-20 10:49:33,577 - securebank - INFO - /detect_drift - Status: success - Time: 0.502s
+2025-09-20 10:49:33,627 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:49:33,675 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:49:33,724 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:49:35,404 - securebank - INFO - /create_dataset - Status: success - Time: 1.681s
+2025-09-20 10:49:36,524 - securebank - INFO - /train_model - Status: success - Time: 1.069s
+2025-09-20 10:50:41,044 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:50:41,097 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:50:41,678 - securebank - INFO - /create_dataset - Status: success - Time: 0.581s
+2025-09-20 10:50:41,724 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:50:42,084 - securebank - INFO - /create_dataset - Status: success - Time: 0.359s
+2025-09-20 10:50:44,198 - securebank - INFO - /quality_assessment - Status: success - Time: 0.039s
+2025-09-20 10:50:44,435 - securebank - INFO - /train_model - Status: success - Time: 0.186s
+2025-09-20 10:50:46,708 - securebank - INFO - /feature_analysis - Status: success - Time: 2.227s
+2025-09-20 10:50:46,759 - securebank - INFO - /predict - Status: error - Time: 0.001s
+2025-09-20 10:50:46,787 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:50:46,837 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:50:46,856 - securebank - INFO - /dataset_lineage/enhanced_fraud_dataset_20250920_101734 - Status: success - Time: 0.000s
+2025-09-20 10:50:47,193 - securebank - INFO - /detect_drift - Status: success - Time: 0.287s
+2025-09-20 10:50:47,244 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:50:47,291 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:50:47,338 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:50:49,028 - securebank - INFO - /create_dataset - Status: success - Time: 1.690s
+2025-09-20 10:50:50,082 - securebank - INFO - /train_model - Status: success - Time: 1.004s
+2025-09-20 10:56:19,582 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:56:19,630 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:56:20,220 - securebank - INFO - /create_dataset - Status: success - Time: 0.591s
+2025-09-20 10:56:20,271 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:56:20,635 - securebank - INFO - /create_dataset - Status: success - Time: 0.364s
+2025-09-20 10:56:22,738 - securebank - INFO - /quality_assessment - Status: success - Time: 0.036s
+2025-09-20 10:56:22,993 - securebank - INFO - /train_model - Status: success - Time: 0.202s
+2025-09-20 10:56:25,315 - securebank - INFO - /feature_analysis - Status: success - Time: 2.269s
+2025-09-20 10:56:25,368 - securebank - INFO - /predict - Status: error - Time: 0.001s
+2025-09-20 10:56:25,396 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:56:25,443 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:56:25,462 - securebank - INFO - /dataset_lineage/test_fraud_dataset_phase4_20250920_105041 - Status: success - Time: 0.000s
+2025-09-20 10:56:25,826 - securebank - INFO - /detect_drift - Status: success - Time: 0.314s
+2025-09-20 10:56:25,880 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:56:25,929 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:56:25,980 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:56:27,660 - securebank - INFO - /create_dataset - Status: success - Time: 1.679s
+2025-09-20 10:56:28,690 - securebank - INFO - /train_model - Status: success - Time: 0.979s
+2025-09-20 10:59:31,780 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 10:59:31,828 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 10:59:32,407 - securebank - INFO - /create_dataset - Status: success - Time: 0.579s
+2025-09-20 10:59:32,458 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 10:59:32,826 - securebank - INFO - /create_dataset - Status: success - Time: 0.367s
+2025-09-20 10:59:34,924 - securebank - INFO - /quality_assessment - Status: success - Time: 0.032s
+2025-09-20 10:59:35,177 - securebank - INFO - /train_model - Status: success - Time: 0.203s
+2025-09-20 10:59:37,470 - securebank - INFO - /feature_analysis - Status: success - Time: 2.243s
+2025-09-20 10:59:37,524 - securebank - INFO - /predict - Status: error - Time: 0.001s
+2025-09-20 10:59:37,552 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:59:37,602 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 10:59:37,622 - securebank - INFO - /dataset_lineage/enhanced_fraud_dataset_20250920_103002 - Status: success - Time: 0.000s
+2025-09-20 10:59:37,999 - securebank - INFO - /detect_drift - Status: success - Time: 0.325s
+2025-09-20 10:59:38,051 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:59:38,100 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 10:59:38,149 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 10:59:39,886 - securebank - INFO - /create_dataset - Status: success - Time: 1.737s
+2025-09-20 10:59:40,885 - securebank - INFO - /train_model - Status: success - Time: 0.946s
+2025-09-20 11:07:11,684 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 11:07:11,733 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 11:07:12,326 - securebank - INFO - /create_dataset - Status: success - Time: 0.593s
+2025-09-20 11:07:12,376 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 11:07:12,743 - securebank - INFO - /create_dataset - Status: success - Time: 0.367s
+2025-09-20 11:07:14,847 - securebank - INFO - /quality_assessment - Status: success - Time: 0.037s
+2025-09-20 11:07:15,099 - securebank - INFO - /train_model - Status: success - Time: 0.200s
+2025-09-20 11:07:17,460 - securebank - INFO - /feature_analysis - Status: success - Time: 2.309s
+2025-09-20 11:07:17,530 - securebank - INFO - /predict - Status: error - Time: 0.019s
+2025-09-20 11:07:17,560 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:07:17,609 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:07:17,628 - securebank - INFO - /dataset_lineage/large_test_dataset_20250920_105627 - Status: success - Time: 0.000s
+2025-09-20 11:07:17,997 - securebank - INFO - /detect_drift - Status: success - Time: 0.319s
+2025-09-20 11:07:18,046 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:07:18,093 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:07:18,141 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 11:07:19,823 - securebank - INFO - /create_dataset - Status: success - Time: 1.682s
+2025-09-20 11:07:20,841 - securebank - INFO - /train_model - Status: success - Time: 0.967s
+2025-09-20 11:14:52,677 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 11:14:52,726 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 11:14:53,334 - securebank - INFO - /create_dataset - Status: success - Time: 0.607s
+2025-09-20 11:14:53,386 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 11:14:53,765 - securebank - INFO - /create_dataset - Status: success - Time: 0.379s
+2025-09-20 11:14:55,867 - securebank - INFO - /quality_assessment - Status: success - Time: 0.033s
+2025-09-20 11:14:56,104 - securebank - INFO - /train_model - Status: success - Time: 0.186s
+2025-09-20 11:14:58,434 - securebank - INFO - /feature_analysis - Status: success - Time: 2.279s
+2025-09-20 11:14:58,506 - securebank - INFO - /predict - Status: error - Time: 0.020s
+2025-09-20 11:14:58,535 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:14:58,584 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:14:58,604 - securebank - INFO - /dataset_lineage/large_test_dataset_20250920_105627 - Status: success - Time: 0.000s
+2025-09-20 11:14:58,972 - securebank - INFO - /detect_drift - Status: success - Time: 0.317s
+2025-09-20 11:14:59,023 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:14:59,070 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:14:59,118 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 11:15:00,807 - securebank - INFO - /create_dataset - Status: success - Time: 1.688s
+2025-09-20 11:15:01,819 - securebank - INFO - /train_model - Status: success - Time: 0.962s
+2025-09-20 11:19:19,019 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 11:19:19,069 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 11:19:19,651 - securebank - INFO - /create_dataset - Status: success - Time: 0.582s
+2025-09-20 11:19:19,702 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 11:19:20,066 - securebank - INFO - /create_dataset - Status: success - Time: 0.363s
+2025-09-20 11:19:22,165 - securebank - INFO - /quality_assessment - Status: success - Time: 0.033s
+2025-09-20 11:19:22,409 - securebank - INFO - /train_model - Status: success - Time: 0.195s
+2025-09-20 11:19:24,716 - securebank - INFO - /feature_analysis - Status: success - Time: 2.257s
+2025-09-20 11:19:24,791 - securebank - INFO - /predict - Status: error - Time: 0.024s
+2025-09-20 11:19:24,821 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:19:24,869 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:19:24,889 - securebank - INFO - /dataset_lineage/large_test_dataset_20250920_111500 - Status: success - Time: 0.000s
+2025-09-20 11:19:25,257 - securebank - INFO - /detect_drift - Status: success - Time: 0.317s
+2025-09-20 11:19:25,308 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:19:25,357 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:19:25,405 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 11:19:27,109 - securebank - INFO - /create_dataset - Status: success - Time: 1.704s
+2025-09-20 11:19:28,160 - securebank - INFO - /train_model - Status: success - Time: 1.000s
+2025-09-20 11:26:19,059 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 11:26:19,108 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 11:26:19,718 - securebank - INFO - /create_dataset - Status: success - Time: 0.609s
+2025-09-20 11:26:19,771 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 11:26:20,149 - securebank - INFO - /create_dataset - Status: success - Time: 0.379s
+2025-09-20 11:26:22,250 - securebank - INFO - /quality_assessment - Status: success - Time: 0.033s
+2025-09-20 11:26:22,499 - securebank - INFO - /train_model - Status: success - Time: 0.197s
+2025-09-20 11:26:24,791 - securebank - INFO - /feature_analysis - Status: success - Time: 2.242s
+2025-09-20 11:26:24,874 - securebank - INFO - /predict - Status: error - Time: 0.033s
+2025-09-20 11:26:24,904 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:26:24,952 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:26:24,971 - securebank - INFO - /dataset_lineage/large_test_dataset_20250920_111500 - Status: success - Time: 0.000s
+2025-09-20 11:26:25,339 - securebank - INFO - /detect_drift - Status: success - Time: 0.317s
+2025-09-20 11:26:25,389 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:26:25,437 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:26:25,487 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 11:26:27,170 - securebank - INFO - /create_dataset - Status: success - Time: 1.683s
+2025-09-20 11:26:28,240 - securebank - INFO - /train_model - Status: success - Time: 1.020s
+2025-09-20 11:29:01,258 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 11:29:01,316 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 11:29:01,896 - securebank - INFO - /create_dataset - Status: success - Time: 0.580s
+2025-09-20 11:29:01,942 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 11:29:02,307 - securebank - INFO - /create_dataset - Status: success - Time: 0.365s
+2025-09-20 11:29:04,419 - securebank - INFO - /quality_assessment - Status: success - Time: 0.044s
+2025-09-20 11:29:04,642 - securebank - INFO - /train_model - Status: success - Time: 0.177s
+2025-09-20 11:29:06,913 - securebank - INFO - /feature_analysis - Status: success - Time: 2.220s
+2025-09-20 11:29:06,997 - securebank - INFO - /predict - Status: error - Time: 0.034s
+2025-09-20 11:29:07,028 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:29:07,076 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:29:07,096 - securebank - INFO - /dataset_lineage/large_test_dataset_20250920_111500 - Status: success - Time: 0.000s
+2025-09-20 11:29:07,461 - securebank - INFO - /detect_drift - Status: success - Time: 0.315s
+2025-09-20 11:29:07,509 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:29:07,568 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:29:07,620 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 11:29:09,314 - securebank - INFO - /create_dataset - Status: success - Time: 1.694s
+2025-09-20 11:29:10,378 - securebank - INFO - /train_model - Status: success - Time: 1.012s
+2025-09-20 11:33:14,572 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 11:33:14,622 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 11:33:15,211 - securebank - INFO - /create_dataset - Status: success - Time: 0.589s
+2025-09-20 11:33:15,261 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 11:33:15,629 - securebank - INFO - /create_dataset - Status: success - Time: 0.368s
+2025-09-20 11:33:17,729 - securebank - INFO - /quality_assessment - Status: success - Time: 0.033s
+2025-09-20 11:33:17,966 - securebank - INFO - /train_model - Status: success - Time: 0.187s
+2025-09-20 11:33:20,262 - securebank - INFO - /feature_analysis - Status: success - Time: 2.247s
+2025-09-20 11:33:20,332 - securebank - INFO - /predict - Status: success - Time: 0.015s
+2025-09-20 11:33:20,382 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:33:20,435 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 11:33:20,456 - securebank - INFO - /dataset_lineage/enhanced_fraud_dataset_20250920_105932 - Status: success - Time: 0.000s
+2025-09-20 11:33:20,831 - securebank - INFO - /detect_drift - Status: success - Time: 0.323s
+2025-09-20 11:33:20,886 - securebank - INFO - /quality_assessment - Status: error - Time: 0.001s
+2025-09-20 11:33:20,936 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 11:33:20,986 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 11:33:22,742 - securebank - INFO - /create_dataset - Status: success - Time: 1.756s
+2025-09-20 11:33:23,766 - securebank - INFO - /train_model - Status: success - Time: 0.973s
+2025-09-20 12:07:38,221 - securebank - INFO - /health - Status: healthy - Time: 0.000s
+2025-09-20 12:07:38,277 - securebank - INFO - Creating enhanced dataset: size=5000, quality_validation=True
+2025-09-20 12:07:38,818 - securebank - INFO - /create_dataset - Status: success - Time: 0.541s
+2025-09-20 12:07:38,863 - securebank - INFO - Creating enhanced dataset: size=3000, quality_validation=True
+2025-09-20 12:07:39,199 - securebank - INFO - /create_dataset - Status: success - Time: 0.335s
+2025-09-20 12:07:41,314 - securebank - INFO - /quality_assessment - Status: success - Time: 0.043s
+2025-09-20 12:07:41,543 - securebank - INFO - /train_model - Status: success - Time: 0.182s
+2025-09-20 12:07:43,528 - securebank - INFO - /feature_analysis - Status: success - Time: 1.940s
+2025-09-20 12:07:43,606 - securebank - INFO - /predict - Status: error - Time: 0.029s
+2025-09-20 12:07:43,632 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 12:07:43,676 - securebank - INFO - /dataset_catalog - Status: success - Time: 0.000s
+2025-09-20 12:07:43,694 - securebank - INFO - /dataset_lineage/enhanced_fraud_dataset_20250920_105932 - Status: success - Time: 0.000s
+2025-09-20 12:07:44,025 - securebank - INFO - /detect_drift - Status: success - Time: 0.285s
+2025-09-20 12:07:44,071 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 12:07:44,114 - securebank - INFO - /quality_assessment - Status: error - Time: 0.000s
+2025-09-20 12:07:44,156 - securebank - INFO - Creating enhanced dataset: size=15000, quality_validation=True
+2025-09-20 12:07:45,704 - securebank - INFO - /create_dataset - Status: success - Time: 1.547s
+2025-09-20 12:07:46,586 - securebank - INFO - /train_model - Status: success - Time: 0.836s

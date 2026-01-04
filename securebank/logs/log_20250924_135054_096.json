@@ -1,0 +1,11 @@
+{
+  "event_type": "prediction_request",
+  "request_data": {
+    "amt": 100
+  },
+  "prediction": "legitimate",
+  "fraud_probability": 0.09305409004782443,
+  "processing_time_seconds": 0.002427816390991211,
+  "endpoint": "/predict",
+  "system_timestamp": "2025-09-24T13:50:54.096510"
+}

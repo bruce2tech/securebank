@@ -1,0 +1,133 @@
+{
+  "timestamp": "2025-09-20T11:26:25.339601",
+  "endpoint": "/detect_drift",
+  "request_data": {
+    "baseline_path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_103002.csv",
+    "dataset_path": "securebank/storage/datasets/large_test_dataset_20250920_110719.csv"
+  },
+  "response_data": {
+    "status": "success",
+    "drift_analysis": {
+      "overall_severity": "high",
+      "features_analyzed": 35,
+      "features_with_drift": 13,
+      "drift_percentage": 37.142857142857146,
+      "recommendations": [
+        "\u26a0\ufe0f HIGH: Significant drift detected. Schedule model validation and potential retraining.",
+        "\ud83c\udfaf Priority features for immediate attention: merchant, category, customer_favorite_merchant",
+        "\ud83c\udff7\ufe0f Categorical drift detected - check for new data sources or encoding changes",
+        "\ud83d\udcca Distributional drift detected - validate data processing pipeline"
+      ]
+    },
+    "feature_results": [
+      {
+        "feature_name": "cc_num",
+        "drift_detected": true,
+        "drift_score": 0.05786666666666668,
+        "drift_type": "distributional",
+        "p_value": 2.343396904521764e-11,
+        "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0000). Monitor closely."
+      },
+      {
+        "feature_name": "distance_from_center",
+        "drift_detected": true,
+        "drift_score": 0.03713333333333335,
+        "drift_type": "distributional",
+        "p_value": 6.278403355911752e-05,
+        "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0095). Monitor closely."
+      },
+      {
+        "feature_name": "customer_amt_count",
+        "drift_detected": true,
+        "drift_score": 0.025466666666666637,
+        "drift_type": "distributional",
+        "p_value": 0.015170844353388915,
+        "recommendation": "Low drift detected. Monitor closely."
+      },
+      {
+        "feature_name": "customer_amt_std",
+        "drift_detected": true,
+        "drift_score": 0.028066666666666684,
+        "drift_type": "distributional",
+        "p_value": 0.00533063039884531,
+        "recommendation": "Low drift detected. Monitor closely."
+      },
+      {
+        "feature_name": "customer_amt_min",
+        "drift_detected": true,
+        "drift_score": 0.059799999999999964,
+        "drift_type": "distributional",
+        "p_value": 4.2384413945874405e-12,
+        "recommendation": "Low drift detected. Distribution shift detected (MW p=0.0000). Monitor closely."
+      },
+      {
+        "feature_name": "customer_amt_max",
+        "drift_detected": true,
+        "drift_score": 0.03813333333333335,
+        "drift_type": "distributional",
+        "p_value": 3.5666467316466625e-05,
+        "recommendation": "Low drift detected. Monitor closely."
+      },
+      {
+        "feature_name": "customer_amt_sum",
+        "drift_detected": true,
+        "drift_score": 0.023399999999999976,
+        "drift_type": "distributional",
+        "p_value": 0.03240587123539018,
+        "recommendation": "Low drift detected. Monitor closely."
+      },
+      {
+        "feature_name": "customer_merchant_nunique",
+        "drift_detected": true,
+        "drift_score": 0.02859999999999996,
+        "drift_type": "distributional",
+        "p_value": 0.004247707948145687,
+        "recommendation": "Low drift detected. Monitor closely."
+      },
+      {
+        "feature_name": "customer_category_nunique",
+        "drift_detected": true,
+        "drift_score": 0.029733333333333334,
+        "drift_type": "distributional",
+        "p_value": 0.0025847577512773043,
+        "recommendation": "Low drift detected. Monitor closely."
+      },
+      {
+        "feature_name": "merchant",
+        "drift_detected": true,
+        "drift_score": 0.9999999999985747,
+        "drift_type": "categorical",
+        "p_value": 1.425330325384477e-12,
+        "recommendation": "Monitor category distribution changes"
+      },
+      {
+        "feature_name": "category",
+        "drift_detected": true,
+        "drift_score": 0.9999999373141821,
+        "drift_type": "categorical",
+        "p_value": 6.26858178957168e-08,
+        "recommendation": "Monitor category distribution changes"
+      },
+      {
+        "feature_name": "customer_favorite_merchant",
+        "drift_detected": true,
+        "drift_score": 1.0,
+        "drift_type": "categorical",
+        "p_value": 3.834967381683525e-191,
+        "recommendation": "Monitor category distribution changes"
+      },
+      {
+        "feature_name": "customer_favorite_category",
+        "drift_detected": true,
+        "drift_score": 1.0,
+        "drift_type": "categorical",
+        "p_value": 1.6394027251799273e-31,
+        "recommendation": "Monitor category distribution changes"
+      }
+    ],
+    "timestamp": "2025-09-20T11:26:25.339596"
+  },
+  "processing_time_seconds": 0.317499,
+  "request_size_bytes": 180,
+  "response_size_bytes": 3579
+}

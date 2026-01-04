@@ -1,0 +1,130 @@
+{
+  "timestamp": "2025-09-20T10:40:26.592791",
+  "endpoint": "/create_dataset",
+  "request_data": {
+    "size": 15000,
+    "apply_quality_validation": true,
+    "apply_feature_engineering": true,
+    "dataset_name": "large_test_dataset"
+  },
+  "response_data": {
+    "status": "success",
+    "message": "Enhanced dataset created successfully",
+    "dataset_info": {
+      "dataset_id": "large_test_dataset_20250920_104025",
+      "file_path": "securebank/storage/datasets/large_test_dataset_20250920_104025.csv",
+      "size": 15000,
+      "columns": 72,
+      "engineered_features_added": 63
+    },
+    "quality_assessment": {
+      "overall_score": 0.9033333333333333,
+      "completeness_score": 1.0,
+      "consistency_score": 0.6666666666666667,
+      "validity_score": 1.0,
+      "issues_found": 2,
+      "recommendations": [
+        "Standardize timestamp generation process",
+        "Update dataset with more recent transaction data"
+      ]
+    },
+    "transformation_log": [
+      {
+        "step": "base_generation",
+        "operation": "synthetic_data_creation",
+        "parameters": {
+          "size": 15000,
+          "fraud_rate": 0.05
+        },
+        "timestamp": "2025-09-20T10:40:25.303735"
+      },
+      {
+        "step": "quality_validation",
+        "operation": "data_quality_assessment",
+        "results": {
+          "overall_score": 0.9033333333333333,
+          "issues_count": 2,
+          "recommendations_count": 2
+        },
+        "timestamp": "2025-09-20T10:40:25.314157"
+      },
+      {
+        "step": "feature_engineering",
+        "operation": "advanced_feature_creation",
+        "results": {
+          "features_added": 63,
+          "new_feature_names": [
+            "transaction_hour",
+            "transaction_day_of_week",
+            "transaction_day_of_month",
+            "transaction_month",
+            "transaction_year",
+            "transaction_quarter",
+            "is_weekend",
+            "is_holiday_season",
+            "is_business_hour",
+            "is_late_night",
+            "hour_sin",
+            "hour_cos",
+            "day_sin",
+            "day_cos",
+            "month_sin",
+            "month_cos",
+            "time_since_last_transaction",
+            "days_since_first_transaction",
+            "distance_from_nyc",
+            "distance_from_chicago",
+            "distance_from_la",
+            "distance_from_houston",
+            "distance_from_atlanta",
+            "lat_rounded",
+            "long_rounded",
+            "geo_cluster",
+            "distance_from_center",
+            "is_location_outlier",
+            "customer_amt_count",
+            "customer_amt_mean",
+            "customer_amt_std",
+            "customer_amt_min",
+            "customer_amt_max",
+            "customer_amt_sum",
+            "customer_merchant_nunique",
+            "customer_category_nunique",
+            "date_only",
+            "customer_daily_txn_mean",
+            "customer_daily_txn_std",
+            "customer_favorite_merchant",
+            "customer_favorite_category",
+            "is_familiar_merchant",
+            "is_familiar_category",
+            "amount_zscore",
+            "is_amount_outlier",
+            "customer_avg_amount",
+            "amount_ratio_to_avg",
+            "merchant_amt_count",
+            "merchant_amt_mean",
+            "merchant_amt_std",
+            "merchant_amt_median",
+            "merchant_is_fraud_mean",
+            "category_amt_count",
+            "category_amt_mean",
+            "category_amt_std",
+            "category_amt_median",
+            "category_is_fraud_mean",
+            "rolling_txn_count_7d",
+            "rolling_avg_amount_7d",
+            "rolling_std_amount_7d",
+            "hour_category_interaction",
+            "hour_amount_interaction",
+            "weekend_amount_interaction"
+          ]
+        },
+        "timestamp": "2025-09-20T10:40:25.965145"
+      }
+    ],
+    "timestamp": "2025-09-20T10:40:26.592781"
+  },
+  "processing_time_seconds": 1.409605,
+  "request_size_bytes": 122,
+  "response_size_bytes": 2573
+}

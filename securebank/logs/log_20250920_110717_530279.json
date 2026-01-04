@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-09-20T11:07:17.530271",
+  "endpoint": "/predict",
+  "request_data": {
+    "trans_date_trans_time": "2023-06-15 14:30:00",
+    "cc_num": 4532015112830366,
+    "merchant": "Suspicious_Store",
+    "category": "gas_transport",
+    "amt": 156.75,
+    "unix_time": 1686836200,
+    "merch_lat": 40.7128,
+    "merch_long": -74.006
+  },
+  "response_data": {
+    "status": "error",
+    "error": "ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''",
+    "timestamp": "2025-09-20T11:07:17.530264"
+  },
+  "processing_time_seconds": 0.019476,
+  "request_size_bytes": 222,
+  "response_size_bytes": 228
+}

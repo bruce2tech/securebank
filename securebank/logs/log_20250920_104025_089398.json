@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-20T10:40:25.089394",
+  "endpoint": "/quality_assessment",
+  "request_data": {
+    "dataset_path": "nonexistent/path/dataset.csv"
+  },
+  "response_data": {
+    "status": "error",
+    "error": "Dataset path required and must exist",
+    "timestamp": "2025-09-20T10:40:25.089387"
+  },
+  "processing_time_seconds": 0.000178,
+  "request_size_bytes": 48,
+  "response_size_bytes": 111
+}

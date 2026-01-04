@@ -1,0 +1,129 @@
+{
+  "timestamp": "2025-09-20T12:07:43.528564",
+  "endpoint": "/feature_analysis",
+  "request_data": {
+    "dataset_path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_103002.csv"
+  },
+  "response_data": {
+    "status": "success",
+    "feature_analysis": {
+      "top_overall_features": [
+        {
+          "feature": "transaction_hour",
+          "importance": 0.06616711988847133
+        },
+        {
+          "feature": "is_late_night",
+          "importance": 0.05945937811563586
+        },
+        {
+          "feature": "amt",
+          "importance": 0.05274747719535594
+        },
+        {
+          "feature": "hour_amount_interaction",
+          "importance": 0.04152389237453996
+        },
+        {
+          "feature": "hour_cos",
+          "importance": 0.039280936220049294
+        },
+        {
+          "feature": "amount_ratio_to_avg",
+          "importance": 0.03196996474384041
+        },
+        {
+          "feature": "distance_from_houston",
+          "importance": 0.030680179597013787
+        },
+        {
+          "feature": "distance_from_center",
+          "importance": 0.027784696171586805
+        },
+        {
+          "feature": "merch_lat",
+          "importance": 0.026938970808786215
+        },
+        {
+          "feature": "geo_cluster_encoded",
+          "importance": 0.024864235359589097
+        },
+        {
+          "feature": "lat_rounded",
+          "importance": 0.024667114683982576
+        },
+        {
+          "feature": "long_rounded",
+          "importance": 0.01922512975713093
+        },
+        {
+          "feature": "merch_long",
+          "importance": 0.016951152469604915
+        },
+        {
+          "feature": "merchant_amt_median_x",
+          "importance": 0.015271361900342086
+        },
+        {
+          "feature": "merchant_is_fraud_mean_x",
+          "importance": 0.015010749535091763
+        }
+      ],
+      "top_engineered_features": [
+        {
+          "feature": "merchant_amt_median_x",
+          "importance": 0.015271361900342086
+        },
+        {
+          "feature": "merchant_is_fraud_mean_x",
+          "importance": 0.015010749535091763
+        },
+        {
+          "feature": "merchant_amt_mean_y",
+          "importance": 0.014986947041139186
+        },
+        {
+          "feature": "merchant_amt_count_y",
+          "importance": 0.012894373843213592
+        },
+        {
+          "feature": "customer_amt_min_x",
+          "importance": 0.012485653513817037
+        },
+        {
+          "feature": "customer_amt_min_y",
+          "importance": 0.012164654182594619
+        },
+        {
+          "feature": "merchant_is_fraud_mean_y",
+          "importance": 0.011517417419049188
+        },
+        {
+          "feature": "merchant_amt_mean_x",
+          "importance": 0.01072367928546157
+        },
+        {
+          "feature": "rolling_avg_amount_7d_x",
+          "importance": 0.010461456876543797
+        },
+        {
+          "feature": "merchant_amt_median_y",
+          "importance": 0.009890381693972442
+        }
+      ],
+      "total_features": 95,
+      "engineered_features_count": 50
+    },
+    "feature_summary": {
+      "original_features": 72,
+      "engineered_features": 50,
+      "total_features": 97,
+      "enhancement_ratio": 0.6944444444444444
+    },
+    "report_path": "securebank/logs/feature_report_20250920_120743.txt",
+    "timestamp": "2025-09-20T12:07:43.528555"
+  },
+  "processing_time_seconds": 1.940023,
+  "request_size_bytes": 93,
+  "response_size_bytes": 2155
+}

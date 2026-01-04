@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-09-20T11:07:14.847433",
+  "endpoint": "/quality_assessment",
+  "request_data": {
+    "dataset_path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_103002.csv"
+  },
+  "response_data": {
+    "status": "success",
+    "quality_metrics": {
+      "overall_score": 0.9033333333333333,
+      "completeness_score": 1.0,
+      "consistency_score": 0.6666666666666667,
+      "validity_score": 1.0,
+      "uniqueness_score": 1.0,
+      "timeliness_score": 0.8
+    },
+    "issues_found": [
+      "5000 records have inconsistent timestamp fields",
+      "Latest transaction is 627 days old"
+    ],
+    "recommendations": [
+      "Standardize timestamp generation process",
+      "Update dataset with more recent transaction data"
+    ],
+    "report_path": "securebank/logs/quality_report_20250920_110714.txt",
+    "dataset_info": {
+      "path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_103002.csv",
+      "rows": 5000,
+      "columns": 72
+    },
+    "timestamp": "2025-09-20T11:07:14.847427"
+  },
+  "processing_time_seconds": 0.03736,
+  "request_size_bytes": 93,
+  "response_size_bytes": 688
+}

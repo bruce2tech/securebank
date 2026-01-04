@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-20T10:17:36.858386",
+  "endpoint": "/feature_analysis",
+  "request_data": {
+    "dataset_path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_101401.csv"
+  },
+  "response_data": {
+    "status": "error",
+    "error": "'customer_favorite_merchant'",
+    "timestamp": "2025-09-20T10:17:36.858377"
+  },
+  "processing_time_seconds": 0.129583,
+  "request_size_bytes": 93,
+  "response_size_bytes": 103
+}

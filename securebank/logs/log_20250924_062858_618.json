@@ -1,0 +1,15 @@
+{
+  "event_type": "model_training",
+  "training_metrics": {
+    "model_id": "model_20250924_062858",
+    "timestamp": "20250924_062858",
+    "performance": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "drift_analysis": null
+  },
+  "endpoint": "/train_model",
+  "system_timestamp": "2025-09-24T06:28:58.618273"
+}

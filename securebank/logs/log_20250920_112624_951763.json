@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-09-20T11:26:24.951729",
+  "endpoint": "/dataset_catalog",
+  "request_data": {},
+  "response_data": {
+    "status": "success",
+    "catalog_summary": {
+      "total_datasets": 41,
+      "high_quality_datasets": 19,
+      "datasets_with_drift": 10,
+      "total_storage_mb": 164.5857229232788
+    },
+    "catalog_path": "securebank/logs/dataset_catalog_20250920_112624.txt",
+    "datasets": [
+      {
+        "dataset_id": "large_test_dataset_20250920_111500",
+        "name": "large_test_dataset",
+        "version": "1.9.0",
+        "created_at": "2025-09-20T11:15:00.229557",
+        "quality_score": 0.4873096446700507,
+        "drift_score": 0.45714285714285713,
+        "size_info": {
+          "rows": 15000,
+          "columns": 64,
+          "size_mb": 8.280941009521484
+        }
+      },
+      {
+        "dataset_id": "enhanced_fraud_dataset_20250920_105932",
+        "name": "enhanced_fraud_dataset",
+        "version": "1.10.0",
+        "created_at": "2025-09-20T10:59:32.706814",
+        "quality_score": 0.9033333333333333,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 3000,
+          "columns": 64,
+          "size_mb": 1.6572589874267578
+        }
+      },
+      {
+        "dataset_id": "test_fraud_dataset_phase4_20250920_103002",
+        "name": "test_fraud_dataset_phase4",
+        "version": "1.4.0",
+        "created_at": "2025-09-20T10:30:02.184584",
+        "quality_score": 0.47244094488188976,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 5000,
+          "columns": 72,
+          "size_mb": 3.079395294189453
+        }
+      },
+      {
+        "dataset_id": "large_test_dataset_20250920_105939",
+        "name": "large_test_dataset",
+        "version": "1.7.0",
+        "created_at": "2025-09-20T10:59:39.283205",
+        "quality_score": 0.521505376344086,
+        "drift_score": 0.5142857142857142,
+        "size_info": {
+          "rows": 15000,
+          "columns": 64,
+          "size_mb": 8.262413024902344
+        }
+      },
+      {
+        "dataset_id": "enhanced_fraud_dataset_20250920_105620",
+        "name": "enhanced_fraud_dataset",
+        "version": "1.9.0",
+        "created_at": "2025-09-20T10:56:20.517887",
+        "quality_score": 0.9033333333333333,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 3000,
+          "columns": 64,
+          "size_mb": 1.6455459594726562
+        }
+      },
+      {
+        "dataset_id": "large_test_dataset_20250920_104934",
+        "name": "large_test_dataset",
+        "version": "1.4.0",
+        "created_at": "2025-09-20T10:49:34.826085",
+        "quality_score": 0.49189189189189186,
+        "drift_score": 0.5428571428571428,
+        "size_info": {
+          "rows": 15000,
+          "columns": 64,
+          "size_mb": 8.292535781860352
+        }
+      },
+      {
+        "dataset_id": "enhanced_fraud_dataset_20250920_104928",
+        "name": "enhanced_fraud_dataset",
+        "version": "1.7.0",
+        "created_at": "2025-09-20T10:49:28.115291",
+        "quality_score": 0.9033333333333333,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 3000,
+          "columns": 64,
+          "size_mb": 1.6482524871826172
+        }
+      },
+      {
+        "dataset_id": "test_fraud_dataset_phase4_20250920_105932",
+        "name": "test_fraud_dataset_phase4",
+        "version": "1.10.0",
+        "created_at": "2025-09-20T10:59:32.213451",
+        "quality_score": 0.42372881355932207,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 5000,
+          "columns": 64,
+          "size_mb": 2.7408552169799805
+        }
+      },
+      {
+        "dataset_id": "test_fraud_dataset_phase4_20250920_112619",
+        "name": "test_fraud_dataset_phase4",
+        "version": "1.14.0",
+        "created_at": "2025-09-20T11:26:19.514712",
+        "quality_score": 0.3870967741935484,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 5000,
+          "columns": 64,
+          "size_mb": 2.7472591400146484
+        }
+      },
+      {
+        "dataset_id": "enhanced_fraud_dataset_20250920_112620",
+        "name": "enhanced_fraud_dataset",
+        "version": "1.14.0",
+        "created_at": "2025-09-20T11:26:20.028900",
+        "quality_score": 0.9033333333333333,
+        "drift_score": 0.0,
+        "size_info": {
+          "rows": 3000,
+          "columns": 64,
+          "size_mb": 1.6508941650390625
+        }
+      }
+    ],
+    "timestamp": "2025-09-20T11:26:24.951724"
+  },
+  "processing_time_seconds": 0.000295,
+  "request_size_bytes": 2,
+  "response_size_bytes": 3212
+}

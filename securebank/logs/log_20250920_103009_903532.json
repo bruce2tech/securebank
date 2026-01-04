@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-09-20T10:30:09.903530",
+  "endpoint": "/quality_assessment",
+  "request_data": {},
+  "response_data": {
+    "status": "error",
+    "error": "Dataset path required and must exist",
+    "timestamp": "2025-09-20T10:30:09.903517"
+  },
+  "processing_time_seconds": 3.7e-05,
+  "request_size_bytes": 2,
+  "response_size_bytes": 111
+}

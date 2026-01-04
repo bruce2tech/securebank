@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-09-20T12:07:41.543724",
+  "endpoint": "/train_model",
+  "request_data": {
+    "dataset_name": "test_fraud_dataset_phase4",
+    "check_drift": false,
+    "quality_threshold": 0.6
+  },
+  "response_data": {
+    "status": "success",
+    "message": "Model trained successfully with enhanced features",
+    "model_info": {
+      "model_path": "output/fraud_model_20250920_120741_p0.330_r0.569.pkl",
+      "performance": {
+        "precision": 0.32954545454545453,
+        "recall": 0.5686274509803921,
+        "f1_score": 0.41726618705035967,
+        "accuracy": 0.919
+      },
+      "training_time": 0.16127395629882812,
+      "validation_message": "Model does not meet requirements (Precision: 0.330, Recall: 0.569)"
+    },
+    "dataset_info": {
+      "path": "securebank/storage/datasets/test_fraud_dataset_phase4_20250920_120738.csv",
+      "size": 5000,
+      "columns": 64
+    },
+    "drift_analysis": {
+      "drift_checked": false,
+      "drift_report": null
+    },
+    "timestamp": "2025-09-20T12:07:41.543718"
+  },
+  "processing_time_seconds": 0.181645,
+  "request_size_bytes": 93,
+  "response_size_bytes": 675
+}

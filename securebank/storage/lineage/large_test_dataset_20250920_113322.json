@@ -1,0 +1,108 @@
+{
+  "dataset_id": "large_test_dataset_20250920_113322",
+  "lineage_type": "source",
+  "parent_datasets": [],
+  "transformation_pipeline": [
+    {
+      "operation": "enhanced_dataset_creation",
+      "description": "Dataset with quality validation and feature engineering",
+      "transformation_log": [
+        {
+          "step": "base_generation",
+          "operation": "synthetic_data_creation",
+          "parameters": {
+            "size": 15000,
+            "fraud_rate": 0.05
+          },
+          "timestamp": "2025-09-20T11:33:21.108683"
+        },
+        {
+          "step": "quality_validation",
+          "operation": "data_quality_assessment",
+          "results": {
+            "overall_score": 0.9033333333333333,
+            "issues_count": 2,
+            "recommendations_count": 2
+          },
+          "timestamp": "2025-09-20T11:33:21.119254"
+        },
+        {
+          "step": "feature_engineering",
+          "operation": "advanced_feature_creation",
+          "results": {
+            "features_added": 55,
+            "new_feature_names": [
+              "merchant_amt_count_x",
+              "merchant_amt_mean_x",
+              "merchant_amt_std_x",
+              "merchant_amt_median_x",
+              "merchant_is_fraud_mean_x",
+              "category_amt_count_x",
+              "category_amt_mean_x",
+              "category_amt_std_x",
+              "category_amt_median_x",
+              "category_is_fraud_mean_x",
+              "rolling_txn_count_7d_x",
+              "rolling_avg_amount_7d_x",
+              "rolling_std_amount_7d_x",
+              "distance_from_nyc",
+              "distance_from_chicago",
+              "distance_from_la",
+              "distance_from_houston",
+              "distance_from_atlanta",
+              "lat_rounded",
+              "long_rounded",
+              "geo_cluster",
+              "distance_from_center",
+              "is_location_outlier",
+              "customer_amt_count",
+              "customer_amt_mean",
+              "customer_amt_std",
+              "customer_amt_min",
+              "customer_amt_max",
+              "customer_amt_sum",
+              "customer_merchant_nunique",
+              "customer_category_nunique",
+              "date_only",
+              "customer_daily_txn_mean",
+              "customer_daily_txn_std",
+              "customer_favorite_merchant",
+              "customer_favorite_category",
+              "is_familiar_merchant",
+              "is_familiar_category",
+              "amount_zscore",
+              "is_amount_outlier",
+              "customer_avg_amount",
+              "amount_ratio_to_avg",
+              "merchant_amt_count_y",
+              "merchant_amt_mean_y",
+              "merchant_amt_std_y",
+              "merchant_amt_median_y",
+              "merchant_is_fraud_mean_y",
+              "category_amt_count_y",
+              "category_amt_mean_y",
+              "category_amt_std_y",
+              "category_amt_median_y",
+              "category_is_fraud_mean_y",
+              "rolling_txn_count_7d_y",
+              "rolling_avg_amount_7d_y",
+              "rolling_std_amount_7d_y"
+            ]
+          },
+          "timestamp": "2025-09-20T11:33:22.137566"
+        }
+      ],
+      "parameters": {
+        "size": 15000,
+        "apply_quality_validation": true,
+        "apply_feature_engineering": true,
+        "dataset_name": "large_test_dataset"
+      }
+    }
+  ],
+  "data_sources": [],
+  "processing_timestamp": "2025-09-20T11:33:22.137587",
+  "processing_duration_seconds": 0.0,
+  "quality_checks_passed": true,
+  "validation_results": {}
+}

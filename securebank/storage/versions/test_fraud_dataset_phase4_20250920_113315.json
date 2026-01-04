@@ -1,0 +1,10 @@
+{
+  "version_id": "test_fraud_dataset_phase4_20250920_113315_v1.16.0",
+  "dataset_id": "test_fraud_dataset_phase4_20250920_113315",
+  "version_number": "1.16.0",
+  "previous_version": "test_fraud_dataset_phase4_20250920_112901",
+  "changes_summary": "Dataset with quality validation and feature engineering",
+  "change_type": "minor",
+  "compatibility_notes": "",
+  "rollback_instructions": ""
+}
