@@ -8,7 +8,7 @@ A comprehensive, production-ready fraud detection system built with LightGBM, Fl
 - Docker
 - Python 3.9+ (for local development)
 - bash (for running test scripts)
-- data sources: customer_data.csv , transaction_data.parquet, fraud_truth_data.json
+- data sources: customer_release.csv, transactions_release.parquet, fraud_release.json
 
 ### Initial setup
 From project root:
@@ -21,7 +21,7 @@ From project root:
      Run: docker build -t securebank  .
 
 * 4. Start container
-     Run: docker run -d -p 5000:5000 securebank_app
+     Run: docker run -d -p 5000:5000 --name securebank-app securebank
 
 ### Running the System
 
@@ -65,33 +65,44 @@ docker cp securebank-app:/app/storage/models/filename ./storage/models/filename
 securebank/
 ├── Dockerfile                      # Docker configuration
 ├── README.md                       # This file
+├── System_Report.md                # Comprehensive technical report
 ├── requirements.txt                # Python dependencies
-├── app.py                         # Main Flask application
-├── test.json                      # Sample test data
-├── engineer_from_raw.py           # create engineered dataset from sources and test with xgboost
-├── sampled_engineered_dataset.py  # create smaller dataset from engineered dataset
-├── train_lightgbm.py              # dev script for training model
-├── train_with_adasyn.py           # dev script for training model
-├── train_model_docker.py          # dev script for training model    
-├── modules/                       # Core modules
-│   ├── data/                      # Data processing
-│   │   └── raw_data_handler.py    # Data handling utilities
-│   └── utils/                     # Utility modules
-│       ├── __init__.py
-│       ├── advanced_logging.py
-│       ├── data_drift_detector.py # detect drift on new data.
-│       ├── logging_utils.py       # Logging system
-│       └── model_utils.py         # Model management
-├── logs/                          # System logs (JSON files)
+├── app.py                          # Main Flask application
+├── test.json                       # Sample test data
+├── engineer_from_raw.py            # Create engineered dataset from sources
+├── train_with_adasyn.py            # Model training with ADASYN resampling
+├── train_lightgbm.py               # LightGBM training script
+├── validate_model.py               # Model validation utilities
+├── modules/                        # Core modules
+│   ├── data/                       # Data processing
+│   │   ├── raw_data_handler.py     # Load raw data files
+│   │   ├── advanced_processor.py   # Advanced data processing
+│   │   ├── drift_detector.py       # Statistical drift detection
+│   │   └── synthetic_data_generator.py
+│   ├── features/                   # Feature engineering
+│   │   └── feature_engineer.py     # Core feature engineering
+│   ├── model/                      # Model components
+│   │   └── fraud_model.py          # Model training/prediction
+│   ├── utils/                      # Utility modules
+│   │   ├── advanced_logging.py     # Advanced log analysis
+│   │   ├── data_drift_detector.py  # Drift monitoring
+│   │   ├── logging_utils.py        # Logging system
+│   │   └── model_utils.py          # Model management
+│   ├── data_quality_validator.py   # Data quality checking
+│   ├── dataset_versioning_system.py # Version & lineage tracking
+│   └── feature_engineering_pipeline.py
+├── logs/                           # System logs (JSON files)
 ├── storage/
-│   └── datasets/                  # Generated training datasets
-│   └── models/                    # Trained models
-├── data_sources/                  # Raw data files
-└── executables/                   # Test scripts
-    ├── run_server.sh             # Build and run Docker container
-    ├── predict.sh                # Test prediction endpoint
-    ├── create_dataset.sh         # Test dataset creation
-    └── train_model.sh            # Test model training
+│   ├── datasets/                   # Generated training datasets
+│   ├── models/                     # Trained model artifacts
+│   └── lineage/                    # Dataset lineage tracking
+├── output/                         # Model outputs
+├── data_sources/                   # Raw data files (not in repo)
+└── executables/                    # Test scripts
+    ├── run_server.sh               # Build and run Docker container
+    ├── predict.sh                  # Test prediction endpoint
+    ├── create_dataset.sh           # Test dataset creation
+    └── train_model.sh              # Test model training
 ```
 
 ##  API Endpoints
@@ -327,7 +338,7 @@ The production system includes:
 
 ### Data Partitioning Strategy
 
-![Partitioning Strategy](Partitition_Strategy.png)
+![Partitioning Strategy](Partition_Strategy.png)
 
 - **Stratified Splitting**: Maintains 0.39% fraud rate across train/test
 - **Train**: 80% (1,318,033 samples)
