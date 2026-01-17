@@ -129,6 +129,16 @@ docker build -t securebank .
 docker run -d -p 5000:5000 --name securebank-app securebank
 ```
 
+### Demo Dataset
+
+After cloning, download the demo data from [Releases](https://github.com/bruce2tech/securebank/releases/latest):
+
+- `customer_release.csv`
+- `transactions_release.parquet`
+- `fraud_release.json`
+
+Place these files in the `data_sources/` folder.
+
 ### Test Endpoints
 
 ```bash
